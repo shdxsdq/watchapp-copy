@@ -2,6 +2,12 @@
 
 适配 BlueOS 手表的纯离线长文本阅读应用。
 
+## 应用预览
+
+![腕上阅读：书架、阅读页与设置页预览](docs/images/app-preview.png)
+
+预览展示了本地书架、沉浸式阅读和阅读设置三个主要界面。
+
 ## 已实现
 
 - 本地文章书架
@@ -56,3 +62,9 @@ src/
 4. 等待窗口显示“完成”，新的 RPK 位于 `dist\watch-square\debug`。
 
 每次运行脚本都会自动更新本地书架、递增应用版本并调用 BlueOS Studio 官方编译器打包。仅复制文件但不运行脚本时，TXT 不会进入 RPK。
+
+## 当前安装包
+
+已将 `local-texts` 中的 6 篇文本编译进 `1.0.39`：
+
+`dist/watch-square/debug/com.sdq.watchreader.debug.1.0.39.rpk`

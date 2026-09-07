@@ -1,28 +1,28 @@
 // 自动生成，请勿手工编辑。
 const LOCAL_BOOKS = [
   {
-    "id": "local-032d0f3ac8",
-    "title": "10"
+    "id": "local-58771f595f",
+    "title": "玻璃森林的夏天"
   },
   {
-    "id": "local-d321e88f23",
-    "title": "单选题"
+    "id": "local-19a4f582b8",
+    "title": "倒着走的钟"
   },
   {
-    "id": "local-516e42ebb2",
-    "title": "多选题"
+    "id": "local-d660d980d9",
+    "title": "第七码头"
   },
   {
-    "id": "local-9b96e89e7c",
-    "title": "简答题"
+    "id": "local-2229f991e7",
+    "title": "雾港来信"
   },
   {
-    "id": "local-7f1e66123c",
-    "title": "判断题"
+    "id": "local-019e219b5e",
+    "title": "月亮修理铺"
   },
   {
-    "id": "local-1caec8f114",
-    "title": "填空题"
+    "id": "local-c3d660c3fe",
+    "title": "云上邮局"
   }
 ]
 

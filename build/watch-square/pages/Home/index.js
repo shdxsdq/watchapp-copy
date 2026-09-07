@@ -198,23 +198,23 @@ function deleteImportedArticle(callbacks) {
   });
 }
 const LOCAL_BOOKS = [{
-  "id": "local-032d0f3ac8",
-  "title": "10"
+  "id": "local-58771f595f",
+  "title": "玻璃森林的夏天"
 }, {
-  "id": "local-d321e88f23",
-  "title": "单选题"
+  "id": "local-19a4f582b8",
+  "title": "倒着走的钟"
 }, {
-  "id": "local-516e42ebb2",
-  "title": "多选题"
+  "id": "local-d660d980d9",
+  "title": "第七码头"
 }, {
-  "id": "local-9b96e89e7c",
-  "title": "简答题"
+  "id": "local-2229f991e7",
+  "title": "雾港来信"
 }, {
-  "id": "local-7f1e66123c",
-  "title": "判断题"
+  "id": "local-019e219b5e",
+  "title": "月亮修理铺"
 }, {
-  "id": "local-1caec8f114",
-  "title": "填空题"
+  "id": "local-c3d660c3fe",
+  "title": "云上邮局"
 }];
 const $app_script$779992388 = {
   data: function dataFun() {
@@ -343,5 +343,5 @@ $app_define$("@app-component/index", [], function($app_require$2, $app_exports$,
   $app_module$.exports.style = $app_style$779992388;
 });
 $app_bootstrap$("@app-component/index");
-//# debugId=4d67cdd9-5c92-46ee-b7d4-78f737dbda95
+//# debugId=013893ae-8061-467b-9473-a202b50c2734
 //# sourceMappingURL=index.js.map
