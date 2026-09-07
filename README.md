@@ -4,9 +4,15 @@
 
 ## 应用预览
 
-![腕上阅读：书架、阅读页与设置页预览](docs/images/app-preview.png)
+| 本地书架 | 阅读设置 |
+| :---: | :---: |
+| <img src="docs/images/preview-bookshelf.png" width="300" alt="本地书架界面"> | <img src="docs/images/preview-settings.png" width="300" alt="阅读设置界面"> |
 
-预览展示了本地书架、沉浸式阅读和阅读设置三个主要界面。
+| 《玻璃森林的夏天》阅读页 | 《月亮修理铺》阅读页 |
+| :---: | :---: |
+| <img src="docs/images/preview-reader-forest.png" width="300" alt="玻璃森林的夏天阅读页"> | <img src="docs/images/preview-reader-moon.png" width="300" alt="月亮修理铺阅读页"> |
+
+以上截图来自 BlueOS 手表端实际界面，展示了本地书架、沉浸式阅读和阅读设置。
 
 ## 已实现
 
