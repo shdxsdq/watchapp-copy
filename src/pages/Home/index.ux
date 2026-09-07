@@ -1,0 +1,325 @@
+<template>
+  <div class="page">
+    <div class="header-item">
+        <div class="header">
+          <div class="header-row">
+            <div class="header-actions">
+              <text class="settings-button" onclick="openSettings">设置</text>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <list class="article-list" type="grid" columns="2" scrollbar="false">
+
+      <list-item
+        if="{{ importedAvailable }}"
+        type="article"
+        class="card-item"
+      >
+        <div class="card-row">
+        <div class="article-card imported-card {{ importedCardClass }}" onclick="openImportedTxt">
+          <text class="article-title">{{ importedTitle }}</text>
+        </div>
+        <text if="{{ importedDeleteVisible }}" class="delete-action" onclick="deleteImportedTxt">删除</text>
+        </div>
+      </list-item>
+
+      <list-item
+        type="article"
+        class="card-item"
+        for="book in localBooks"
+      >
+        <div class="card-row">
+        <div class="article-card {{ book.id === localDeleteTarget ? 'article-card-swiped' : '' }}" onclick="openLocalBook(book.id)">
+          <text class="article-title">{{ book.title }}</text>
+        </div>
+        <text if="{{ book.id === localDeleteTarget }}" class="delete-action" onclick="deleteLocalBook(book.id)">删除</text>
+        </div>
+      </list-item>
+
+    </list>
+    <div class="footer-item">
+      <text class="footer-text">内容保存在手表本地，无需联网</text>
+    </div>
+  </div>
+</template>
+
+<script>
+import {
+  loadReaderState,
+  saveReaderState
+} from '../../utils/readerStorage.js'
+import {
+  IMPORTED_ARTICLE_ID,
+  deleteImportedArticle,
+  startTxtReceiver,
+  subscribeTxtImport
+} from '../../utils/txtLibrary.js'
+import { LOCAL_BOOKS } from '../../data/localBooks.js'
+
+
+export default {
+  data: {
+    importedAvailable: false,
+    importedTitle: 'TXT 传书',
+    localBooks: [],
+    localDeleteTarget: '',
+    importedDeleteVisible: false,
+    importedCardClass: ''
+  },
+
+  onInit() {
+    startTxtReceiver()
+    subscribeTxtImport(() => {
+      this.refreshReadingState()
+    })
+    this.refreshReadingState()
+  },
+
+  onShow() {
+    this.refreshReadingState()
+  },
+
+  refreshReadingState() {
+    const state = loadReaderState()
+    this.applyImportedArticle(state)
+    const deleted = state.deletedArticles || {}
+    this.localBooks = LOCAL_BOOKS.filter(book => !deleted[book.id])
+  },
+
+  applyImportedArticle(state) {
+    const importedArticle = state.importedArticle
+    this.importedAvailable = Boolean(importedArticle)
+    this.importedTitle = importedArticle ? importedArticle.title : 'TXT 传书'
+  },
+
+  openArticle(articleId) {
+    global.router.push({
+      uri: '/pages/Reader',
+      params: { articleId }
+    })
+  },
+
+  resetSwipeState() {
+    this.importedDeleteVisible = false
+    this.localDeleteTarget = ''
+    this.importedCardClass = ''
+  },
+
+  showDelete(articleId) {
+    this.resetSwipeState()
+    if (articleId === IMPORTED_ARTICLE_ID) {
+      this.importedDeleteVisible = true
+      this.importedCardClass = 'article-card-swiped'
+    }
+  },
+
+  showLocalDelete(articleId) {
+    this.resetSwipeState()
+    this.localDeleteTarget = articleId
+  },
+
+  handleSwipe(event, articleId) {
+    const direction = event && event.direction
+    if (direction === 'left') {
+      this.showDelete(articleId)
+    } else if (direction === 'right') {
+      this.resetSwipeState()
+    }
+  },
+
+  swipeImportedTxt(event) { this.handleSwipe(event, IMPORTED_ARTICLE_ID) },
+
+  swipeLocalBook(articleId, event) {
+    const direction = event && event.direction
+    if (direction === 'left') {
+      this.resetSwipeState()
+      this.localDeleteTarget = articleId
+    } else if (direction === 'right') {
+      this.localDeleteTarget = ''
+    }
+  },
+
+  deleteBundledArticle(articleId) {
+    const state = loadReaderState()
+    state.deletedArticles[articleId] = true
+    delete state.progress[articleId]
+    delete state.scrollProgress[articleId]
+    delete state.favorites[articleId]
+    saveReaderState(state)
+    this.resetSwipeState()
+    this.refreshReadingState()
+  },
+
+  deleteImportedTxt() {
+    deleteImportedArticle({
+      success: () => {
+        this.resetSwipeState()
+        this.refreshReadingState()
+      }
+    })
+  },
+
+  deleteLocalBook(articleId) {
+    this.deleteBundledArticle(articleId)
+  },
+
+  openLocalBook(articleId) {
+    if (this.localDeleteTarget === articleId) {
+      this.localDeleteTarget = ''
+      return
+    }
+    this.openArticle(articleId)
+  },
+
+  openImportedTxt() {
+    if (this.importedDeleteVisible) { this.resetSwipeState(); return }
+    this.openArticle(IMPORTED_ARTICLE_ID)
+  },
+
+  openTransfer() {
+    global.router.push({ uri: '/pages/Transfer' })
+  },
+
+  openSettings() {
+    global.router.push({ uri: '/pages/Settings' })
+  }
+}
+</script>
+
+<style lang="scss">
+@import './../../assets/styles/style.scss';
+
+.page {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 0 10px;
+  background-color: $ink;
+}
+
+.article-list {
+  width: 100%;
+  height: calc(100% - 190px);
+  flex-direction: column;
+  background-color: $ink;
+}
+
+.header-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.header {
+  width: 100%;
+  padding: 16px 10px 12px 10px;
+  flex-direction: column;
+}
+
+.header-row {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-copy {
+  width: 0;
+  flex-direction: column;
+}
+
+.header-actions {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.settings-button {
+  width: 78px;
+  height: 54px;
+  border-radius: 27px;
+  background-color: $surface;
+  color: $paper;
+  font-size: 21px;
+  line-height: 54px;
+  text-align: center;
+  opacity: active 0.68;
+}
+
+.page-title {
+  color: $paper;
+  font-size: 44px;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+.card-item {
+  width: 100%;
+  padding: 0 5px 10px 5px;
+}
+
+.card-row {
+  width: 100%;
+  height: 104px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.article-card {
+  width: 100%;
+  height: 104px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid #252b35;
+  background-color: $surface;
+  flex-direction: row;
+  align-items: center;
+  opacity: active 0.72;
+}
+
+.article-card-swiped {
+  width: 120px;
+}
+
+.delete-action {
+  width: 82px;
+  height: 104px;
+  margin-left: 8px;
+  border-radius: 18px;
+  background-color: #b93838;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 104px;
+  text-align: center;
+  opacity: active 0.68;
+}
+
+.imported-card {
+  border: 2px solid #245f89;
+  background-color: #101b24;
+}
+
+.article-title {
+  width: 100%;
+  color: $paper;
+  font-size: 23px;
+  line-height: 31px;
+  font-weight: bold;
+  lines: 1;
+}
+
+.footer-item {
+  width: 100%;
+  height: 76px;
+  flex-shrink: 0;
+  padding: 8px 10px 22px 10px;
+}
+
+.footer-text {
+  width: 100%;
+  color: $muted-dark;
+  font-size: 19px;
+  line-height: 28px;
+  text-align: center;
+}
+</style>

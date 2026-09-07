@@ -1,0 +1,163 @@
+{
+  "type": "div",
+  "class": "page",
+  "style": {
+    "alignItems": "center",
+    "backgroundColor": "#0b0d10",
+    "flexDirection": "column",
+    "height": "100%",
+    "paddingBottom": "12px",
+    "paddingLeft": "24px",
+    "paddingRight": "24px",
+    "paddingTop": "12px",
+    "width": "100%"
+  },
+  "styleObjectId": 1561212216,
+  "children": [
+    {
+      "type": "div",
+      "class": "top-bar",
+      "style": {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": "64px",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "type": "text",
+          "attr": {
+            "value": "‹"
+          },
+          "bind": 1,
+          "class": "back-button",
+          "events": {
+            "click": "goBack"
+          },
+          "style": {
+            "backgroundColor": "#171b21",
+            "borderRadius": "26px",
+            "color": "#35a7ff",
+            "fontSize": "38px",
+            "height": "52px",
+            "lineHeight": "48px",
+            "textAlign": "center",
+            "width": "52px"
+          }
+        },
+        {
+          "type": "text",
+          "attr": {
+            "value": "TXT 传书"
+          },
+          "class": "page-title",
+          "style": {
+            "color": "#f7f2e8",
+            "fontSize": "34px",
+            "fontWeight": "bold",
+            "lineHeight": "52px",
+            "textAlign": "center",
+            "width": "314px"
+          }
+        },
+        {
+          "type": "text",
+          "class": "header-spacer",
+          "style": {
+            "height": "52px",
+            "width": "52px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "class": "transfer-card",
+      "style": {
+        "alignItems": "center",
+        "backgroundColor": "#101b24",
+        "borderBottomColor": "#245f89",
+        "borderBottomWidth": "2px",
+        "borderLeftColor": "#245f89",
+        "borderLeftWidth": "2px",
+        "borderRadius": "24px",
+        "borderRightColor": "#245f89",
+        "borderRightWidth": "2px",
+        "borderStyle": "solid",
+        "borderTopColor": "#245f89",
+        "borderTopWidth": "2px",
+        "flexDirection": "column",
+        "marginTop": "24px",
+        "paddingBottom": "28px",
+        "paddingLeft": "24px",
+        "paddingRight": "24px",
+        "paddingTop": "28px",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "type": "text",
+          "attr": {
+            "value": "等待接收 TXT"
+          },
+          "class": "transfer-title",
+          "style": {
+            "color": "#f7f2e8",
+            "fontSize": "30px",
+            "fontWeight": "bold",
+            "lineHeight": "42px",
+            "textAlign": "center"
+          }
+        },
+        {
+          "type": "text",
+          "attr": {
+            "value": "在手机配套端选择 TXT 文件并发送，收到后会自动保存到离线书架。"
+          },
+          "class": "transfer-copy",
+          "style": {
+            "color": "#9ca3ad",
+            "fontSize": "22px",
+            "lineHeight": "33px",
+            "marginTop": "12px",
+            "textAlign": "center",
+            "width": "100%"
+          }
+        },
+        {
+          "type": "text",
+          "attr": {
+            "$value": "transferStatus"
+          },
+          "bind": 1,
+          "class": "transfer-badge",
+          "style": {
+            "backgroundColor": "#173f5e",
+            "borderRadius": "24px",
+            "color": "#70c2ff",
+            "fontSize": "19px",
+            "height": "48px",
+            "lineHeight": "48px",
+            "marginTop": "20px",
+            "textAlign": "center",
+            "width": "260px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "attr": {
+        "value": "仅支持 .txt 文件"
+      },
+      "class": "transfer-tip",
+      "style": {
+        "color": "#666e79",
+        "fontSize": "19px",
+        "lineHeight": "28px",
+        "marginTop": "18px",
+        "textAlign": "center"
+      }
+    }
+  ]
+}

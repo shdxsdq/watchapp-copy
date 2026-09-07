@@ -1,0 +1,154 @@
+{
+  "type": "div",
+  "bind": 1,
+  "class": "page",
+  "events": {
+    "click": "onReaderClick",
+    "touchcancel": "onReaderTouchCancel",
+    "touchend": "onReaderTouchEnd",
+    "touchmove": "onReaderTouchMove",
+    "touchstart": "onReaderTouchStart"
+  },
+  "style": {
+    "backgroundColor": "#0b0d10",
+    "height": "100%",
+    "width": "100%"
+  },
+  "styleObjectId": 1182111904,
+  "children": [
+    {
+      "type": "scroll",
+      "attr": {
+        "$scrollTop": "scrollTop",
+        "bounces": "false",
+        "id": "readerScroll",
+        "scrollY": "true"
+      },
+      "bind": 1,
+      "class": "reader-list",
+      "events": {
+        "scroll": "onReaderScroll"
+      },
+      "style": {
+        "backgroundColor": "#0b0d10",
+        "flexDirection": "column",
+        "height": "100%",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "type": "div",
+          "attr": {
+            "id": "readerContent"
+          },
+          "bind": 1,
+          "class": "reader-content",
+          "style": {
+            "flexDirection": "column",
+            "flexShrink": 0,
+            "width": "100%"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "top-item",
+              "style": {
+                "flexShrink": 0,
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "class": "top-bar",
+                  "style": {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "height": "72px",
+                    "paddingBottom": "6px",
+                    "paddingLeft": "24px",
+                    "paddingRight": "24px",
+                    "paddingTop": "12px",
+                    "width": "100%"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "$value": "article.title"
+                      },
+                      "bind": 1,
+                      "class": "reader-title",
+                      "style": {
+                        "color": "#f7f2e8",
+                        "fontSize": "27px",
+                        "fontWeight": "bold",
+                        "lineHeight": "48px",
+                        "lines": 1,
+                        "paddingBottom": "0px",
+                        "paddingLeft": "8px",
+                        "paddingRight": "8px",
+                        "paddingTop": "0px",
+                        "textAlign": "center",
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "attr": {
+                "$id": "function () { return '' + 'paragraph-' + this.$idx; }"
+              },
+              "bind": 2,
+              "class": "paragraph-item",
+              "repeat": {
+                "$exp": "article.paragraphs",
+                "value": "paragraph"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "$class": "function () { return ['paragraph', this.fontClass, this.lineClass, this.weightClass, this.alignClass, this.colorClass, '' + 'tag-color-' + (this.paragraph.color || 'default')]; }",
+                  "attr": {
+                    "$value": "function () { return this.paragraph.text || this.paragraph; }"
+                  },
+                  "bind": 1
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "reader-footer",
+              "style": {
+                "flexShrink": 0,
+                "paddingBottom": "32px",
+                "paddingLeft": "28px",
+                "paddingRight": "28px",
+                "paddingTop": "12px",
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "已经到底了 · 彩色 TXT 版"
+                  },
+                  "class": "end-text",
+                  "style": {
+                    "color": "#666e79",
+                    "fontSize": "17px",
+                    "lineHeight": "24px",
+                    "textAlign": "center",
+                    "width": "100%"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

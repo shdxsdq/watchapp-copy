@@ -1,0 +1,3848 @@
+{
+  "1728483328": {
+    ".page": {
+      "width": "100%",
+      "height": "100%",
+      "backgroundColor": "#030609"
+    },
+    ".settings-list": {
+      "width": "100%",
+      "height": "100%",
+      "backgroundColor": "#030609",
+      "flexDirection": "column"
+    },
+    ".header-item": {
+      "width": "100%",
+      "paddingTop": "6px",
+      "paddingRight": "20px",
+      "paddingBottom": "2px",
+      "paddingLeft": "20px"
+    },
+    ".top-bar": {
+      "width": "100%",
+      "height": "58px",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".back-button": {
+      "width": "50px",
+      "height": "50px",
+      "borderRadius": "25px",
+      "backgroundColor": "#171b21",
+      "color": "#35a7ff",
+      "fontSize": "36px",
+      "lineHeight": "47px",
+      "textAlign": "center"
+    },
+    ".header-spacer": {
+      "width": "50px",
+      "height": "50px"
+    },
+    ".page-title": {
+      "width": "326px",
+      "color": "#199cff",
+      "fontSize": "32px",
+      "lineHeight": "50px",
+      "fontWeight": "bold",
+      "textAlign": "center"
+    },
+    ".preview-item": {
+      "width": "100%",
+      "paddingTop": "2px",
+      "paddingRight": "20px",
+      "paddingBottom": "4px",
+      "paddingLeft": "20px"
+    },
+    ".preview-box": {
+      "width": "100%",
+      "minHeight": "70px",
+      "paddingTop": "10px",
+      "paddingRight": "14px",
+      "paddingBottom": "10px",
+      "paddingLeft": "14px",
+      "borderTopWidth": "2px",
+      "borderRightWidth": "2px",
+      "borderBottomWidth": "2px",
+      "borderLeftWidth": "2px",
+      "borderStyle": "solid",
+      "borderTopColor": "#61798d",
+      "borderRightColor": "#61798d",
+      "borderBottomColor": "#61798d",
+      "borderLeftColor": "#61798d",
+      "borderRadius": "16px",
+      "justifyContent": "center"
+    },
+    ".preview-text": {
+      "width": "100%"
+    },
+    ".setting-item": {
+      "width": "100%",
+      "paddingTop": "0px",
+      "paddingRight": "20px",
+      "paddingBottom": "0px",
+      "paddingLeft": "20px"
+    },
+    ".color-item": {
+      "width": "100%",
+      "paddingTop": "0px",
+      "paddingRight": "20px",
+      "paddingBottom": "0px",
+      "paddingLeft": "20px"
+    },
+    ".setting-row": {
+      "width": "100%",
+      "minHeight": "62px",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".option-row": {
+      "width": "100%",
+      "minHeight": "62px",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".color-row": {
+      "width": "100%",
+      "minHeight": "62px",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".setting-label": {
+      "width": "158px",
+      "color": "#d8efff",
+      "fontSize": "25px",
+      "lineHeight": "44px"
+    },
+    ".step-button": {
+      "width": "50px",
+      "height": "50px",
+      "borderRadius": "25px",
+      "borderTopWidth": "3px",
+      "borderRightWidth": "3px",
+      "borderBottomWidth": "3px",
+      "borderLeftWidth": "3px",
+      "borderStyle": "solid",
+      "borderTopColor": "#35a7ff",
+      "borderRightColor": "#35a7ff",
+      "borderBottomColor": "#35a7ff",
+      "borderLeftColor": "#35a7ff",
+      "color": "#35a7ff",
+      "fontSize": "37px",
+      "lineHeight": "43px",
+      "textAlign": "center"
+    },
+    ".setting-value": {
+      "width": "82px",
+      "color": "#d8efff",
+      "fontSize": "30px",
+      "lineHeight": "50px",
+      "textAlign": "center"
+    },
+    ".option-button": {
+      "width": "116px",
+      "color": "#8ca5b8",
+      "fontSize": "23px",
+      "lineHeight": "50px",
+      "textAlign": "center"
+    },
+    ".option-active": {
+      "color": "#35a7ff"
+    },
+    ".color-swatch": {
+      "width": "42px",
+      "height": "42px",
+      "marginLeft": "6px",
+      "borderRadius": "22px",
+      "borderTopWidth": "3px",
+      "borderRightWidth": "3px",
+      "borderBottomWidth": "3px",
+      "borderLeftWidth": "3px",
+      "borderStyle": "solid",
+      "borderTopColor": "#35a7ff",
+      "borderRightColor": "#35a7ff",
+      "borderBottomColor": "#35a7ff",
+      "borderLeftColor": "#35a7ff"
+    },
+    ".color-value": {
+      "width": "72px",
+      "color": "#d8efff",
+      "fontSize": "19px",
+      "lineHeight": "50px",
+      "textAlign": "center"
+    },
+    ".swatch-warm": {
+      "backgroundColor": "#f2eadb"
+    },
+    ".swatch-white": {
+      "backgroundColor": "#ffffff"
+    },
+    ".swatch-aqua": {
+      "backgroundColor": "#8ff1e7"
+    },
+    ".swatch-yellow": {
+      "backgroundColor": "#ffe28a"
+    },
+    ".swatch-blue": {
+      "backgroundColor": "#8ecbff"
+    },
+    ".swatch-green": {
+      "backgroundColor": "#b7eda8"
+    },
+    ".footer-item": {
+      "width": "100%",
+      "paddingTop": "5px",
+      "paddingRight": "20px",
+      "paddingBottom": "18px",
+      "paddingLeft": "20px"
+    },
+    ".footer-text": {
+      "width": "100%",
+      "color": "#627486",
+      "fontSize": "18px",
+      "lineHeight": "28px",
+      "textAlign": "center"
+    },
+    ".font-10": {
+      "fontSize": "10px"
+    },
+    ".font-10.line-3": {
+      "lineHeight": "3px"
+    },
+    ".font-10.line-4": {
+      "lineHeight": "4px"
+    },
+    ".font-10.line-5": {
+      "lineHeight": "5px"
+    },
+    ".font-10.line-6": {
+      "lineHeight": "6px"
+    },
+    ".font-10.line-7": {
+      "lineHeight": "7px"
+    },
+    ".font-10.line-8": {
+      "lineHeight": "8px"
+    },
+    ".font-10.line-9": {
+      "lineHeight": "9px"
+    },
+    ".font-10.line-10": {
+      "lineHeight": "10px"
+    },
+    ".font-10.line-11": {
+      "lineHeight": "11px"
+    },
+    ".font-10.line-12": {
+      "lineHeight": "12px"
+    },
+    ".font-10.line-13": {
+      "lineHeight": "13px"
+    },
+    ".font-10.line-14": {
+      "lineHeight": "14px"
+    },
+    ".font-10.line-15": {
+      "lineHeight": "15px"
+    },
+    ".font-10.line-16": {
+      "lineHeight": "16px"
+    },
+    ".font-10.line-17": {
+      "lineHeight": "17px"
+    },
+    ".font-10.line-18": {
+      "lineHeight": "18px"
+    },
+    ".font-10.line-19": {
+      "lineHeight": "19px"
+    },
+    ".font-10.line-20": {
+      "lineHeight": "20px"
+    },
+    ".font-10.line-21": {
+      "lineHeight": "21px"
+    },
+    ".font-10.line-22": {
+      "lineHeight": "22px"
+    },
+    ".font-10.line-23": {
+      "lineHeight": "23px"
+    },
+    ".font-10.line-24": {
+      "lineHeight": "24px"
+    },
+    ".font-10.line-25": {
+      "lineHeight": "25px"
+    },
+    ".font-10.line-26": {
+      "lineHeight": "26px"
+    },
+    ".font-10.line-27": {
+      "lineHeight": "27px"
+    },
+    ".font-10.line-28": {
+      "lineHeight": "28px"
+    },
+    ".font-10.line-29": {
+      "lineHeight": "29px"
+    },
+    ".font-10.line-30": {
+      "lineHeight": "30px"
+    },
+    ".font-11": {
+      "fontSize": "11px"
+    },
+    ".font-11.line-3": {
+      "lineHeight": "3.3px"
+    },
+    ".font-11.line-4": {
+      "lineHeight": "4.4px"
+    },
+    ".font-11.line-5": {
+      "lineHeight": "5.5px"
+    },
+    ".font-11.line-6": {
+      "lineHeight": "6.6px"
+    },
+    ".font-11.line-7": {
+      "lineHeight": "7.7px"
+    },
+    ".font-11.line-8": {
+      "lineHeight": "8.8px"
+    },
+    ".font-11.line-9": {
+      "lineHeight": "9.9px"
+    },
+    ".font-11.line-10": {
+      "lineHeight": "11px"
+    },
+    ".font-11.line-11": {
+      "lineHeight": "12.1px"
+    },
+    ".font-11.line-12": {
+      "lineHeight": "13.2px"
+    },
+    ".font-11.line-13": {
+      "lineHeight": "14.3px"
+    },
+    ".font-11.line-14": {
+      "lineHeight": "15.4px"
+    },
+    ".font-11.line-15": {
+      "lineHeight": "16.5px"
+    },
+    ".font-11.line-16": {
+      "lineHeight": "17.6px"
+    },
+    ".font-11.line-17": {
+      "lineHeight": "18.7px"
+    },
+    ".font-11.line-18": {
+      "lineHeight": "19.8px"
+    },
+    ".font-11.line-19": {
+      "lineHeight": "20.9px"
+    },
+    ".font-11.line-20": {
+      "lineHeight": "22px"
+    },
+    ".font-11.line-21": {
+      "lineHeight": "23.1px"
+    },
+    ".font-11.line-22": {
+      "lineHeight": "24.2px"
+    },
+    ".font-11.line-23": {
+      "lineHeight": "25.3px"
+    },
+    ".font-11.line-24": {
+      "lineHeight": "26.4px"
+    },
+    ".font-11.line-25": {
+      "lineHeight": "27.5px"
+    },
+    ".font-11.line-26": {
+      "lineHeight": "28.6px"
+    },
+    ".font-11.line-27": {
+      "lineHeight": "29.7px"
+    },
+    ".font-11.line-28": {
+      "lineHeight": "30.8px"
+    },
+    ".font-11.line-29": {
+      "lineHeight": "31.9px"
+    },
+    ".font-11.line-30": {
+      "lineHeight": "33px"
+    },
+    ".font-12": {
+      "fontSize": "12px"
+    },
+    ".font-12.line-3": {
+      "lineHeight": "3.6px"
+    },
+    ".font-12.line-4": {
+      "lineHeight": "4.8px"
+    },
+    ".font-12.line-5": {
+      "lineHeight": "6px"
+    },
+    ".font-12.line-6": {
+      "lineHeight": "7.2px"
+    },
+    ".font-12.line-7": {
+      "lineHeight": "8.4px"
+    },
+    ".font-12.line-8": {
+      "lineHeight": "9.6px"
+    },
+    ".font-12.line-9": {
+      "lineHeight": "10.8px"
+    },
+    ".font-12.line-10": {
+      "lineHeight": "12px"
+    },
+    ".font-12.line-11": {
+      "lineHeight": "13.2px"
+    },
+    ".font-12.line-12": {
+      "lineHeight": "14.4px"
+    },
+    ".font-12.line-13": {
+      "lineHeight": "15.6px"
+    },
+    ".font-12.line-14": {
+      "lineHeight": "16.8px"
+    },
+    ".font-12.line-15": {
+      "lineHeight": "18px"
+    },
+    ".font-12.line-16": {
+      "lineHeight": "19.2px"
+    },
+    ".font-12.line-17": {
+      "lineHeight": "20.4px"
+    },
+    ".font-12.line-18": {
+      "lineHeight": "21.6px"
+    },
+    ".font-12.line-19": {
+      "lineHeight": "22.8px"
+    },
+    ".font-12.line-20": {
+      "lineHeight": "24px"
+    },
+    ".font-12.line-21": {
+      "lineHeight": "25.2px"
+    },
+    ".font-12.line-22": {
+      "lineHeight": "26.4px"
+    },
+    ".font-12.line-23": {
+      "lineHeight": "27.6px"
+    },
+    ".font-12.line-24": {
+      "lineHeight": "28.8px"
+    },
+    ".font-12.line-25": {
+      "lineHeight": "30px"
+    },
+    ".font-12.line-26": {
+      "lineHeight": "31.2px"
+    },
+    ".font-12.line-27": {
+      "lineHeight": "32.4px"
+    },
+    ".font-12.line-28": {
+      "lineHeight": "33.6px"
+    },
+    ".font-12.line-29": {
+      "lineHeight": "34.8px"
+    },
+    ".font-12.line-30": {
+      "lineHeight": "36px"
+    },
+    ".font-13": {
+      "fontSize": "13px"
+    },
+    ".font-13.line-3": {
+      "lineHeight": "3.9px"
+    },
+    ".font-13.line-4": {
+      "lineHeight": "5.2px"
+    },
+    ".font-13.line-5": {
+      "lineHeight": "6.5px"
+    },
+    ".font-13.line-6": {
+      "lineHeight": "7.8px"
+    },
+    ".font-13.line-7": {
+      "lineHeight": "9.1px"
+    },
+    ".font-13.line-8": {
+      "lineHeight": "10.4px"
+    },
+    ".font-13.line-9": {
+      "lineHeight": "11.7px"
+    },
+    ".font-13.line-10": {
+      "lineHeight": "13px"
+    },
+    ".font-13.line-11": {
+      "lineHeight": "14.3px"
+    },
+    ".font-13.line-12": {
+      "lineHeight": "15.6px"
+    },
+    ".font-13.line-13": {
+      "lineHeight": "16.9px"
+    },
+    ".font-13.line-14": {
+      "lineHeight": "18.2px"
+    },
+    ".font-13.line-15": {
+      "lineHeight": "19.5px"
+    },
+    ".font-13.line-16": {
+      "lineHeight": "20.8px"
+    },
+    ".font-13.line-17": {
+      "lineHeight": "22.1px"
+    },
+    ".font-13.line-18": {
+      "lineHeight": "23.4px"
+    },
+    ".font-13.line-19": {
+      "lineHeight": "24.7px"
+    },
+    ".font-13.line-20": {
+      "lineHeight": "26px"
+    },
+    ".font-13.line-21": {
+      "lineHeight": "27.3px"
+    },
+    ".font-13.line-22": {
+      "lineHeight": "28.6px"
+    },
+    ".font-13.line-23": {
+      "lineHeight": "29.9px"
+    },
+    ".font-13.line-24": {
+      "lineHeight": "31.2px"
+    },
+    ".font-13.line-25": {
+      "lineHeight": "32.5px"
+    },
+    ".font-13.line-26": {
+      "lineHeight": "33.8px"
+    },
+    ".font-13.line-27": {
+      "lineHeight": "35.1px"
+    },
+    ".font-13.line-28": {
+      "lineHeight": "36.4px"
+    },
+    ".font-13.line-29": {
+      "lineHeight": "37.7px"
+    },
+    ".font-13.line-30": {
+      "lineHeight": "39px"
+    },
+    ".font-14": {
+      "fontSize": "14px"
+    },
+    ".font-14.line-3": {
+      "lineHeight": "4.2px"
+    },
+    ".font-14.line-4": {
+      "lineHeight": "5.6px"
+    },
+    ".font-14.line-5": {
+      "lineHeight": "7px"
+    },
+    ".font-14.line-6": {
+      "lineHeight": "8.4px"
+    },
+    ".font-14.line-7": {
+      "lineHeight": "9.8px"
+    },
+    ".font-14.line-8": {
+      "lineHeight": "11.2px"
+    },
+    ".font-14.line-9": {
+      "lineHeight": "12.6px"
+    },
+    ".font-14.line-10": {
+      "lineHeight": "14px"
+    },
+    ".font-14.line-11": {
+      "lineHeight": "15.4px"
+    },
+    ".font-14.line-12": {
+      "lineHeight": "16.8px"
+    },
+    ".font-14.line-13": {
+      "lineHeight": "18.2px"
+    },
+    ".font-14.line-14": {
+      "lineHeight": "19.6px"
+    },
+    ".font-14.line-15": {
+      "lineHeight": "21px"
+    },
+    ".font-14.line-16": {
+      "lineHeight": "22.4px"
+    },
+    ".font-14.line-17": {
+      "lineHeight": "23.8px"
+    },
+    ".font-14.line-18": {
+      "lineHeight": "25.2px"
+    },
+    ".font-14.line-19": {
+      "lineHeight": "26.6px"
+    },
+    ".font-14.line-20": {
+      "lineHeight": "28px"
+    },
+    ".font-14.line-21": {
+      "lineHeight": "29.4px"
+    },
+    ".font-14.line-22": {
+      "lineHeight": "30.8px"
+    },
+    ".font-14.line-23": {
+      "lineHeight": "32.2px"
+    },
+    ".font-14.line-24": {
+      "lineHeight": "33.6px"
+    },
+    ".font-14.line-25": {
+      "lineHeight": "35px"
+    },
+    ".font-14.line-26": {
+      "lineHeight": "36.4px"
+    },
+    ".font-14.line-27": {
+      "lineHeight": "37.8px"
+    },
+    ".font-14.line-28": {
+      "lineHeight": "39.2px"
+    },
+    ".font-14.line-29": {
+      "lineHeight": "40.6px"
+    },
+    ".font-14.line-30": {
+      "lineHeight": "42px"
+    },
+    ".font-15": {
+      "fontSize": "15px"
+    },
+    ".font-15.line-3": {
+      "lineHeight": "4.5px"
+    },
+    ".font-15.line-4": {
+      "lineHeight": "6px"
+    },
+    ".font-15.line-5": {
+      "lineHeight": "7.5px"
+    },
+    ".font-15.line-6": {
+      "lineHeight": "9px"
+    },
+    ".font-15.line-7": {
+      "lineHeight": "10.5px"
+    },
+    ".font-15.line-8": {
+      "lineHeight": "12px"
+    },
+    ".font-15.line-9": {
+      "lineHeight": "13.5px"
+    },
+    ".font-15.line-10": {
+      "lineHeight": "15px"
+    },
+    ".font-15.line-11": {
+      "lineHeight": "16.5px"
+    },
+    ".font-15.line-12": {
+      "lineHeight": "18px"
+    },
+    ".font-15.line-13": {
+      "lineHeight": "19.5px"
+    },
+    ".font-15.line-14": {
+      "lineHeight": "21px"
+    },
+    ".font-15.line-15": {
+      "lineHeight": "22.5px"
+    },
+    ".font-15.line-16": {
+      "lineHeight": "24px"
+    },
+    ".font-15.line-17": {
+      "lineHeight": "25.5px"
+    },
+    ".font-15.line-18": {
+      "lineHeight": "27px"
+    },
+    ".font-15.line-19": {
+      "lineHeight": "28.5px"
+    },
+    ".font-15.line-20": {
+      "lineHeight": "30px"
+    },
+    ".font-15.line-21": {
+      "lineHeight": "31.5px"
+    },
+    ".font-15.line-22": {
+      "lineHeight": "33px"
+    },
+    ".font-15.line-23": {
+      "lineHeight": "34.5px"
+    },
+    ".font-15.line-24": {
+      "lineHeight": "36px"
+    },
+    ".font-15.line-25": {
+      "lineHeight": "37.5px"
+    },
+    ".font-15.line-26": {
+      "lineHeight": "39px"
+    },
+    ".font-15.line-27": {
+      "lineHeight": "40.5px"
+    },
+    ".font-15.line-28": {
+      "lineHeight": "42px"
+    },
+    ".font-15.line-29": {
+      "lineHeight": "43.5px"
+    },
+    ".font-15.line-30": {
+      "lineHeight": "45px"
+    },
+    ".font-16": {
+      "fontSize": "16px"
+    },
+    ".font-16.line-3": {
+      "lineHeight": "4.8px"
+    },
+    ".font-16.line-4": {
+      "lineHeight": "6.4px"
+    },
+    ".font-16.line-5": {
+      "lineHeight": "8px"
+    },
+    ".font-16.line-6": {
+      "lineHeight": "9.6px"
+    },
+    ".font-16.line-7": {
+      "lineHeight": "11.2px"
+    },
+    ".font-16.line-8": {
+      "lineHeight": "12.8px"
+    },
+    ".font-16.line-9": {
+      "lineHeight": "14.4px"
+    },
+    ".font-16.line-10": {
+      "lineHeight": "16px"
+    },
+    ".font-16.line-11": {
+      "lineHeight": "17.6px"
+    },
+    ".font-16.line-12": {
+      "lineHeight": "19.2px"
+    },
+    ".font-16.line-13": {
+      "lineHeight": "20.8px"
+    },
+    ".font-16.line-14": {
+      "lineHeight": "22.4px"
+    },
+    ".font-16.line-15": {
+      "lineHeight": "24px"
+    },
+    ".font-16.line-16": {
+      "lineHeight": "25.6px"
+    },
+    ".font-16.line-17": {
+      "lineHeight": "27.2px"
+    },
+    ".font-16.line-18": {
+      "lineHeight": "28.8px"
+    },
+    ".font-16.line-19": {
+      "lineHeight": "30.4px"
+    },
+    ".font-16.line-20": {
+      "lineHeight": "32px"
+    },
+    ".font-16.line-21": {
+      "lineHeight": "33.6px"
+    },
+    ".font-16.line-22": {
+      "lineHeight": "35.2px"
+    },
+    ".font-16.line-23": {
+      "lineHeight": "36.8px"
+    },
+    ".font-16.line-24": {
+      "lineHeight": "38.4px"
+    },
+    ".font-16.line-25": {
+      "lineHeight": "40px"
+    },
+    ".font-16.line-26": {
+      "lineHeight": "41.6px"
+    },
+    ".font-16.line-27": {
+      "lineHeight": "43.2px"
+    },
+    ".font-16.line-28": {
+      "lineHeight": "44.8px"
+    },
+    ".font-16.line-29": {
+      "lineHeight": "46.4px"
+    },
+    ".font-16.line-30": {
+      "lineHeight": "48px"
+    },
+    ".font-17": {
+      "fontSize": "17px"
+    },
+    ".font-17.line-3": {
+      "lineHeight": "5.1px"
+    },
+    ".font-17.line-4": {
+      "lineHeight": "6.8px"
+    },
+    ".font-17.line-5": {
+      "lineHeight": "8.5px"
+    },
+    ".font-17.line-6": {
+      "lineHeight": "10.2px"
+    },
+    ".font-17.line-7": {
+      "lineHeight": "11.9px"
+    },
+    ".font-17.line-8": {
+      "lineHeight": "13.6px"
+    },
+    ".font-17.line-9": {
+      "lineHeight": "15.3px"
+    },
+    ".font-17.line-10": {
+      "lineHeight": "17px"
+    },
+    ".font-17.line-11": {
+      "lineHeight": "18.7px"
+    },
+    ".font-17.line-12": {
+      "lineHeight": "20.4px"
+    },
+    ".font-17.line-13": {
+      "lineHeight": "22.1px"
+    },
+    ".font-17.line-14": {
+      "lineHeight": "23.8px"
+    },
+    ".font-17.line-15": {
+      "lineHeight": "25.5px"
+    },
+    ".font-17.line-16": {
+      "lineHeight": "27.2px"
+    },
+    ".font-17.line-17": {
+      "lineHeight": "28.9px"
+    },
+    ".font-17.line-18": {
+      "lineHeight": "30.6px"
+    },
+    ".font-17.line-19": {
+      "lineHeight": "32.3px"
+    },
+    ".font-17.line-20": {
+      "lineHeight": "34px"
+    },
+    ".font-17.line-21": {
+      "lineHeight": "35.7px"
+    },
+    ".font-17.line-22": {
+      "lineHeight": "37.4px"
+    },
+    ".font-17.line-23": {
+      "lineHeight": "39.1px"
+    },
+    ".font-17.line-24": {
+      "lineHeight": "40.8px"
+    },
+    ".font-17.line-25": {
+      "lineHeight": "42.5px"
+    },
+    ".font-17.line-26": {
+      "lineHeight": "44.2px"
+    },
+    ".font-17.line-27": {
+      "lineHeight": "45.9px"
+    },
+    ".font-17.line-28": {
+      "lineHeight": "47.6px"
+    },
+    ".font-17.line-29": {
+      "lineHeight": "49.3px"
+    },
+    ".font-17.line-30": {
+      "lineHeight": "51px"
+    },
+    ".font-18": {
+      "fontSize": "18px"
+    },
+    ".font-18.line-3": {
+      "lineHeight": "5.4px"
+    },
+    ".font-18.line-4": {
+      "lineHeight": "7.2px"
+    },
+    ".font-18.line-5": {
+      "lineHeight": "9px"
+    },
+    ".font-18.line-6": {
+      "lineHeight": "10.8px"
+    },
+    ".font-18.line-7": {
+      "lineHeight": "12.6px"
+    },
+    ".font-18.line-8": {
+      "lineHeight": "14.4px"
+    },
+    ".font-18.line-9": {
+      "lineHeight": "16.2px"
+    },
+    ".font-18.line-10": {
+      "lineHeight": "18px"
+    },
+    ".font-18.line-11": {
+      "lineHeight": "19.8px"
+    },
+    ".font-18.line-12": {
+      "lineHeight": "21.6px"
+    },
+    ".font-18.line-13": {
+      "lineHeight": "23.4px"
+    },
+    ".font-18.line-14": {
+      "lineHeight": "25.2px"
+    },
+    ".font-18.line-15": {
+      "lineHeight": "27px"
+    },
+    ".font-18.line-16": {
+      "lineHeight": "28.8px"
+    },
+    ".font-18.line-17": {
+      "lineHeight": "30.6px"
+    },
+    ".font-18.line-18": {
+      "lineHeight": "32.4px"
+    },
+    ".font-18.line-19": {
+      "lineHeight": "34.2px"
+    },
+    ".font-18.line-20": {
+      "lineHeight": "36px"
+    },
+    ".font-18.line-21": {
+      "lineHeight": "37.8px"
+    },
+    ".font-18.line-22": {
+      "lineHeight": "39.6px"
+    },
+    ".font-18.line-23": {
+      "lineHeight": "41.4px"
+    },
+    ".font-18.line-24": {
+      "lineHeight": "43.2px"
+    },
+    ".font-18.line-25": {
+      "lineHeight": "45px"
+    },
+    ".font-18.line-26": {
+      "lineHeight": "46.8px"
+    },
+    ".font-18.line-27": {
+      "lineHeight": "48.6px"
+    },
+    ".font-18.line-28": {
+      "lineHeight": "50.4px"
+    },
+    ".font-18.line-29": {
+      "lineHeight": "52.2px"
+    },
+    ".font-18.line-30": {
+      "lineHeight": "54px"
+    },
+    ".font-19": {
+      "fontSize": "19px"
+    },
+    ".font-19.line-3": {
+      "lineHeight": "5.7px"
+    },
+    ".font-19.line-4": {
+      "lineHeight": "7.6px"
+    },
+    ".font-19.line-5": {
+      "lineHeight": "9.5px"
+    },
+    ".font-19.line-6": {
+      "lineHeight": "11.4px"
+    },
+    ".font-19.line-7": {
+      "lineHeight": "13.3px"
+    },
+    ".font-19.line-8": {
+      "lineHeight": "15.2px"
+    },
+    ".font-19.line-9": {
+      "lineHeight": "17.1px"
+    },
+    ".font-19.line-10": {
+      "lineHeight": "19px"
+    },
+    ".font-19.line-11": {
+      "lineHeight": "20.9px"
+    },
+    ".font-19.line-12": {
+      "lineHeight": "22.8px"
+    },
+    ".font-19.line-13": {
+      "lineHeight": "24.7px"
+    },
+    ".font-19.line-14": {
+      "lineHeight": "26.6px"
+    },
+    ".font-19.line-15": {
+      "lineHeight": "28.5px"
+    },
+    ".font-19.line-16": {
+      "lineHeight": "30.4px"
+    },
+    ".font-19.line-17": {
+      "lineHeight": "32.3px"
+    },
+    ".font-19.line-18": {
+      "lineHeight": "34.2px"
+    },
+    ".font-19.line-19": {
+      "lineHeight": "36.1px"
+    },
+    ".font-19.line-20": {
+      "lineHeight": "38px"
+    },
+    ".font-19.line-21": {
+      "lineHeight": "39.9px"
+    },
+    ".font-19.line-22": {
+      "lineHeight": "41.8px"
+    },
+    ".font-19.line-23": {
+      "lineHeight": "43.7px"
+    },
+    ".font-19.line-24": {
+      "lineHeight": "45.6px"
+    },
+    ".font-19.line-25": {
+      "lineHeight": "47.5px"
+    },
+    ".font-19.line-26": {
+      "lineHeight": "49.4px"
+    },
+    ".font-19.line-27": {
+      "lineHeight": "51.3px"
+    },
+    ".font-19.line-28": {
+      "lineHeight": "53.2px"
+    },
+    ".font-19.line-29": {
+      "lineHeight": "55.1px"
+    },
+    ".font-19.line-30": {
+      "lineHeight": "57px"
+    },
+    ".font-20": {
+      "fontSize": "20px"
+    },
+    ".font-20.line-3": {
+      "lineHeight": "6px"
+    },
+    ".font-20.line-4": {
+      "lineHeight": "8px"
+    },
+    ".font-20.line-5": {
+      "lineHeight": "10px"
+    },
+    ".font-20.line-6": {
+      "lineHeight": "12px"
+    },
+    ".font-20.line-7": {
+      "lineHeight": "14px"
+    },
+    ".font-20.line-8": {
+      "lineHeight": "16px"
+    },
+    ".font-20.line-9": {
+      "lineHeight": "18px"
+    },
+    ".font-20.line-10": {
+      "lineHeight": "20px"
+    },
+    ".font-20.line-11": {
+      "lineHeight": "22px"
+    },
+    ".font-20.line-12": {
+      "lineHeight": "24px"
+    },
+    ".font-20.line-13": {
+      "lineHeight": "26px"
+    },
+    ".font-20.line-14": {
+      "lineHeight": "28px"
+    },
+    ".font-20.line-15": {
+      "lineHeight": "30px"
+    },
+    ".font-20.line-16": {
+      "lineHeight": "32px"
+    },
+    ".font-20.line-17": {
+      "lineHeight": "34px"
+    },
+    ".font-20.line-18": {
+      "lineHeight": "36px"
+    },
+    ".font-20.line-19": {
+      "lineHeight": "38px"
+    },
+    ".font-20.line-20": {
+      "lineHeight": "40px"
+    },
+    ".font-20.line-21": {
+      "lineHeight": "42px"
+    },
+    ".font-20.line-22": {
+      "lineHeight": "44px"
+    },
+    ".font-20.line-23": {
+      "lineHeight": "46px"
+    },
+    ".font-20.line-24": {
+      "lineHeight": "48px"
+    },
+    ".font-20.line-25": {
+      "lineHeight": "50px"
+    },
+    ".font-20.line-26": {
+      "lineHeight": "52px"
+    },
+    ".font-20.line-27": {
+      "lineHeight": "54px"
+    },
+    ".font-20.line-28": {
+      "lineHeight": "56px"
+    },
+    ".font-20.line-29": {
+      "lineHeight": "58px"
+    },
+    ".font-20.line-30": {
+      "lineHeight": "60px"
+    },
+    ".font-21": {
+      "fontSize": "21px"
+    },
+    ".font-21.line-3": {
+      "lineHeight": "6.3px"
+    },
+    ".font-21.line-4": {
+      "lineHeight": "8.4px"
+    },
+    ".font-21.line-5": {
+      "lineHeight": "10.5px"
+    },
+    ".font-21.line-6": {
+      "lineHeight": "12.6px"
+    },
+    ".font-21.line-7": {
+      "lineHeight": "14.7px"
+    },
+    ".font-21.line-8": {
+      "lineHeight": "16.8px"
+    },
+    ".font-21.line-9": {
+      "lineHeight": "18.9px"
+    },
+    ".font-21.line-10": {
+      "lineHeight": "21px"
+    },
+    ".font-21.line-11": {
+      "lineHeight": "23.1px"
+    },
+    ".font-21.line-12": {
+      "lineHeight": "25.2px"
+    },
+    ".font-21.line-13": {
+      "lineHeight": "27.3px"
+    },
+    ".font-21.line-14": {
+      "lineHeight": "29.4px"
+    },
+    ".font-21.line-15": {
+      "lineHeight": "31.5px"
+    },
+    ".font-21.line-16": {
+      "lineHeight": "33.6px"
+    },
+    ".font-21.line-17": {
+      "lineHeight": "35.7px"
+    },
+    ".font-21.line-18": {
+      "lineHeight": "37.8px"
+    },
+    ".font-21.line-19": {
+      "lineHeight": "39.9px"
+    },
+    ".font-21.line-20": {
+      "lineHeight": "42px"
+    },
+    ".font-21.line-21": {
+      "lineHeight": "44.1px"
+    },
+    ".font-21.line-22": {
+      "lineHeight": "46.2px"
+    },
+    ".font-21.line-23": {
+      "lineHeight": "48.3px"
+    },
+    ".font-21.line-24": {
+      "lineHeight": "50.4px"
+    },
+    ".font-21.line-25": {
+      "lineHeight": "52.5px"
+    },
+    ".font-21.line-26": {
+      "lineHeight": "54.6px"
+    },
+    ".font-21.line-27": {
+      "lineHeight": "56.7px"
+    },
+    ".font-21.line-28": {
+      "lineHeight": "58.8px"
+    },
+    ".font-21.line-29": {
+      "lineHeight": "60.9px"
+    },
+    ".font-21.line-30": {
+      "lineHeight": "63px"
+    },
+    ".font-22": {
+      "fontSize": "22px"
+    },
+    ".font-22.line-3": {
+      "lineHeight": "6.6px"
+    },
+    ".font-22.line-4": {
+      "lineHeight": "8.8px"
+    },
+    ".font-22.line-5": {
+      "lineHeight": "11px"
+    },
+    ".font-22.line-6": {
+      "lineHeight": "13.2px"
+    },
+    ".font-22.line-7": {
+      "lineHeight": "15.4px"
+    },
+    ".font-22.line-8": {
+      "lineHeight": "17.6px"
+    },
+    ".font-22.line-9": {
+      "lineHeight": "19.8px"
+    },
+    ".font-22.line-10": {
+      "lineHeight": "22px"
+    },
+    ".font-22.line-11": {
+      "lineHeight": "24.2px"
+    },
+    ".font-22.line-12": {
+      "lineHeight": "26.4px"
+    },
+    ".font-22.line-13": {
+      "lineHeight": "28.6px"
+    },
+    ".font-22.line-14": {
+      "lineHeight": "30.8px"
+    },
+    ".font-22.line-15": {
+      "lineHeight": "33px"
+    },
+    ".font-22.line-16": {
+      "lineHeight": "35.2px"
+    },
+    ".font-22.line-17": {
+      "lineHeight": "37.4px"
+    },
+    ".font-22.line-18": {
+      "lineHeight": "39.6px"
+    },
+    ".font-22.line-19": {
+      "lineHeight": "41.8px"
+    },
+    ".font-22.line-20": {
+      "lineHeight": "44px"
+    },
+    ".font-22.line-21": {
+      "lineHeight": "46.2px"
+    },
+    ".font-22.line-22": {
+      "lineHeight": "48.4px"
+    },
+    ".font-22.line-23": {
+      "lineHeight": "50.6px"
+    },
+    ".font-22.line-24": {
+      "lineHeight": "52.8px"
+    },
+    ".font-22.line-25": {
+      "lineHeight": "55px"
+    },
+    ".font-22.line-26": {
+      "lineHeight": "57.2px"
+    },
+    ".font-22.line-27": {
+      "lineHeight": "59.4px"
+    },
+    ".font-22.line-28": {
+      "lineHeight": "61.6px"
+    },
+    ".font-22.line-29": {
+      "lineHeight": "63.8px"
+    },
+    ".font-22.line-30": {
+      "lineHeight": "66px"
+    },
+    ".font-23": {
+      "fontSize": "23px"
+    },
+    ".font-23.line-3": {
+      "lineHeight": "6.9px"
+    },
+    ".font-23.line-4": {
+      "lineHeight": "9.2px"
+    },
+    ".font-23.line-5": {
+      "lineHeight": "11.5px"
+    },
+    ".font-23.line-6": {
+      "lineHeight": "13.8px"
+    },
+    ".font-23.line-7": {
+      "lineHeight": "16.1px"
+    },
+    ".font-23.line-8": {
+      "lineHeight": "18.4px"
+    },
+    ".font-23.line-9": {
+      "lineHeight": "20.7px"
+    },
+    ".font-23.line-10": {
+      "lineHeight": "23px"
+    },
+    ".font-23.line-11": {
+      "lineHeight": "25.3px"
+    },
+    ".font-23.line-12": {
+      "lineHeight": "27.6px"
+    },
+    ".font-23.line-13": {
+      "lineHeight": "29.9px"
+    },
+    ".font-23.line-14": {
+      "lineHeight": "32.2px"
+    },
+    ".font-23.line-15": {
+      "lineHeight": "34.5px"
+    },
+    ".font-23.line-16": {
+      "lineHeight": "36.8px"
+    },
+    ".font-23.line-17": {
+      "lineHeight": "39.1px"
+    },
+    ".font-23.line-18": {
+      "lineHeight": "41.4px"
+    },
+    ".font-23.line-19": {
+      "lineHeight": "43.7px"
+    },
+    ".font-23.line-20": {
+      "lineHeight": "46px"
+    },
+    ".font-23.line-21": {
+      "lineHeight": "48.3px"
+    },
+    ".font-23.line-22": {
+      "lineHeight": "50.6px"
+    },
+    ".font-23.line-23": {
+      "lineHeight": "52.9px"
+    },
+    ".font-23.line-24": {
+      "lineHeight": "55.2px"
+    },
+    ".font-23.line-25": {
+      "lineHeight": "57.5px"
+    },
+    ".font-23.line-26": {
+      "lineHeight": "59.8px"
+    },
+    ".font-23.line-27": {
+      "lineHeight": "62.1px"
+    },
+    ".font-23.line-28": {
+      "lineHeight": "64.4px"
+    },
+    ".font-23.line-29": {
+      "lineHeight": "66.7px"
+    },
+    ".font-23.line-30": {
+      "lineHeight": "69px"
+    },
+    ".font-24": {
+      "fontSize": "24px"
+    },
+    ".font-24.line-3": {
+      "lineHeight": "7.2px"
+    },
+    ".font-24.line-4": {
+      "lineHeight": "9.6px"
+    },
+    ".font-24.line-5": {
+      "lineHeight": "12px"
+    },
+    ".font-24.line-6": {
+      "lineHeight": "14.4px"
+    },
+    ".font-24.line-7": {
+      "lineHeight": "16.8px"
+    },
+    ".font-24.line-8": {
+      "lineHeight": "19.2px"
+    },
+    ".font-24.line-9": {
+      "lineHeight": "21.6px"
+    },
+    ".font-24.line-10": {
+      "lineHeight": "24px"
+    },
+    ".font-24.line-11": {
+      "lineHeight": "26.4px"
+    },
+    ".font-24.line-12": {
+      "lineHeight": "28.8px"
+    },
+    ".font-24.line-13": {
+      "lineHeight": "31.2px"
+    },
+    ".font-24.line-14": {
+      "lineHeight": "33.6px"
+    },
+    ".font-24.line-15": {
+      "lineHeight": "36px"
+    },
+    ".font-24.line-16": {
+      "lineHeight": "38.4px"
+    },
+    ".font-24.line-17": {
+      "lineHeight": "40.8px"
+    },
+    ".font-24.line-18": {
+      "lineHeight": "43.2px"
+    },
+    ".font-24.line-19": {
+      "lineHeight": "45.6px"
+    },
+    ".font-24.line-20": {
+      "lineHeight": "48px"
+    },
+    ".font-24.line-21": {
+      "lineHeight": "50.4px"
+    },
+    ".font-24.line-22": {
+      "lineHeight": "52.8px"
+    },
+    ".font-24.line-23": {
+      "lineHeight": "55.2px"
+    },
+    ".font-24.line-24": {
+      "lineHeight": "57.6px"
+    },
+    ".font-24.line-25": {
+      "lineHeight": "60px"
+    },
+    ".font-24.line-26": {
+      "lineHeight": "62.4px"
+    },
+    ".font-24.line-27": {
+      "lineHeight": "64.8px"
+    },
+    ".font-24.line-28": {
+      "lineHeight": "67.2px"
+    },
+    ".font-24.line-29": {
+      "lineHeight": "69.6px"
+    },
+    ".font-24.line-30": {
+      "lineHeight": "72px"
+    },
+    ".font-25": {
+      "fontSize": "25px"
+    },
+    ".font-25.line-3": {
+      "lineHeight": "7.5px"
+    },
+    ".font-25.line-4": {
+      "lineHeight": "10px"
+    },
+    ".font-25.line-5": {
+      "lineHeight": "12.5px"
+    },
+    ".font-25.line-6": {
+      "lineHeight": "15px"
+    },
+    ".font-25.line-7": {
+      "lineHeight": "17.5px"
+    },
+    ".font-25.line-8": {
+      "lineHeight": "20px"
+    },
+    ".font-25.line-9": {
+      "lineHeight": "22.5px"
+    },
+    ".font-25.line-10": {
+      "lineHeight": "25px"
+    },
+    ".font-25.line-11": {
+      "lineHeight": "27.5px"
+    },
+    ".font-25.line-12": {
+      "lineHeight": "30px"
+    },
+    ".font-25.line-13": {
+      "lineHeight": "32.5px"
+    },
+    ".font-25.line-14": {
+      "lineHeight": "35px"
+    },
+    ".font-25.line-15": {
+      "lineHeight": "37.5px"
+    },
+    ".font-25.line-16": {
+      "lineHeight": "40px"
+    },
+    ".font-25.line-17": {
+      "lineHeight": "42.5px"
+    },
+    ".font-25.line-18": {
+      "lineHeight": "45px"
+    },
+    ".font-25.line-19": {
+      "lineHeight": "47.5px"
+    },
+    ".font-25.line-20": {
+      "lineHeight": "50px"
+    },
+    ".font-25.line-21": {
+      "lineHeight": "52.5px"
+    },
+    ".font-25.line-22": {
+      "lineHeight": "55px"
+    },
+    ".font-25.line-23": {
+      "lineHeight": "57.5px"
+    },
+    ".font-25.line-24": {
+      "lineHeight": "60px"
+    },
+    ".font-25.line-25": {
+      "lineHeight": "62.5px"
+    },
+    ".font-25.line-26": {
+      "lineHeight": "65px"
+    },
+    ".font-25.line-27": {
+      "lineHeight": "67.5px"
+    },
+    ".font-25.line-28": {
+      "lineHeight": "70px"
+    },
+    ".font-25.line-29": {
+      "lineHeight": "72.5px"
+    },
+    ".font-25.line-30": {
+      "lineHeight": "75px"
+    },
+    ".font-26": {
+      "fontSize": "26px"
+    },
+    ".font-26.line-3": {
+      "lineHeight": "7.8px"
+    },
+    ".font-26.line-4": {
+      "lineHeight": "10.4px"
+    },
+    ".font-26.line-5": {
+      "lineHeight": "13px"
+    },
+    ".font-26.line-6": {
+      "lineHeight": "15.6px"
+    },
+    ".font-26.line-7": {
+      "lineHeight": "18.2px"
+    },
+    ".font-26.line-8": {
+      "lineHeight": "20.8px"
+    },
+    ".font-26.line-9": {
+      "lineHeight": "23.4px"
+    },
+    ".font-26.line-10": {
+      "lineHeight": "26px"
+    },
+    ".font-26.line-11": {
+      "lineHeight": "28.6px"
+    },
+    ".font-26.line-12": {
+      "lineHeight": "31.2px"
+    },
+    ".font-26.line-13": {
+      "lineHeight": "33.8px"
+    },
+    ".font-26.line-14": {
+      "lineHeight": "36.4px"
+    },
+    ".font-26.line-15": {
+      "lineHeight": "39px"
+    },
+    ".font-26.line-16": {
+      "lineHeight": "41.6px"
+    },
+    ".font-26.line-17": {
+      "lineHeight": "44.2px"
+    },
+    ".font-26.line-18": {
+      "lineHeight": "46.8px"
+    },
+    ".font-26.line-19": {
+      "lineHeight": "49.4px"
+    },
+    ".font-26.line-20": {
+      "lineHeight": "52px"
+    },
+    ".font-26.line-21": {
+      "lineHeight": "54.6px"
+    },
+    ".font-26.line-22": {
+      "lineHeight": "57.2px"
+    },
+    ".font-26.line-23": {
+      "lineHeight": "59.8px"
+    },
+    ".font-26.line-24": {
+      "lineHeight": "62.4px"
+    },
+    ".font-26.line-25": {
+      "lineHeight": "65px"
+    },
+    ".font-26.line-26": {
+      "lineHeight": "67.6px"
+    },
+    ".font-26.line-27": {
+      "lineHeight": "70.2px"
+    },
+    ".font-26.line-28": {
+      "lineHeight": "72.8px"
+    },
+    ".font-26.line-29": {
+      "lineHeight": "75.4px"
+    },
+    ".font-26.line-30": {
+      "lineHeight": "78px"
+    },
+    ".font-27": {
+      "fontSize": "27px"
+    },
+    ".font-27.line-3": {
+      "lineHeight": "8.1px"
+    },
+    ".font-27.line-4": {
+      "lineHeight": "10.8px"
+    },
+    ".font-27.line-5": {
+      "lineHeight": "13.5px"
+    },
+    ".font-27.line-6": {
+      "lineHeight": "16.2px"
+    },
+    ".font-27.line-7": {
+      "lineHeight": "18.9px"
+    },
+    ".font-27.line-8": {
+      "lineHeight": "21.6px"
+    },
+    ".font-27.line-9": {
+      "lineHeight": "24.3px"
+    },
+    ".font-27.line-10": {
+      "lineHeight": "27px"
+    },
+    ".font-27.line-11": {
+      "lineHeight": "29.7px"
+    },
+    ".font-27.line-12": {
+      "lineHeight": "32.4px"
+    },
+    ".font-27.line-13": {
+      "lineHeight": "35.1px"
+    },
+    ".font-27.line-14": {
+      "lineHeight": "37.8px"
+    },
+    ".font-27.line-15": {
+      "lineHeight": "40.5px"
+    },
+    ".font-27.line-16": {
+      "lineHeight": "43.2px"
+    },
+    ".font-27.line-17": {
+      "lineHeight": "45.9px"
+    },
+    ".font-27.line-18": {
+      "lineHeight": "48.6px"
+    },
+    ".font-27.line-19": {
+      "lineHeight": "51.3px"
+    },
+    ".font-27.line-20": {
+      "lineHeight": "54px"
+    },
+    ".font-27.line-21": {
+      "lineHeight": "56.7px"
+    },
+    ".font-27.line-22": {
+      "lineHeight": "59.4px"
+    },
+    ".font-27.line-23": {
+      "lineHeight": "62.1px"
+    },
+    ".font-27.line-24": {
+      "lineHeight": "64.8px"
+    },
+    ".font-27.line-25": {
+      "lineHeight": "67.5px"
+    },
+    ".font-27.line-26": {
+      "lineHeight": "70.2px"
+    },
+    ".font-27.line-27": {
+      "lineHeight": "72.9px"
+    },
+    ".font-27.line-28": {
+      "lineHeight": "75.6px"
+    },
+    ".font-27.line-29": {
+      "lineHeight": "78.3px"
+    },
+    ".font-27.line-30": {
+      "lineHeight": "81px"
+    },
+    ".font-28": {
+      "fontSize": "28px"
+    },
+    ".font-28.line-3": {
+      "lineHeight": "8.4px"
+    },
+    ".font-28.line-4": {
+      "lineHeight": "11.2px"
+    },
+    ".font-28.line-5": {
+      "lineHeight": "14px"
+    },
+    ".font-28.line-6": {
+      "lineHeight": "16.8px"
+    },
+    ".font-28.line-7": {
+      "lineHeight": "19.6px"
+    },
+    ".font-28.line-8": {
+      "lineHeight": "22.4px"
+    },
+    ".font-28.line-9": {
+      "lineHeight": "25.2px"
+    },
+    ".font-28.line-10": {
+      "lineHeight": "28px"
+    },
+    ".font-28.line-11": {
+      "lineHeight": "30.8px"
+    },
+    ".font-28.line-12": {
+      "lineHeight": "33.6px"
+    },
+    ".font-28.line-13": {
+      "lineHeight": "36.4px"
+    },
+    ".font-28.line-14": {
+      "lineHeight": "39.2px"
+    },
+    ".font-28.line-15": {
+      "lineHeight": "42px"
+    },
+    ".font-28.line-16": {
+      "lineHeight": "44.8px"
+    },
+    ".font-28.line-17": {
+      "lineHeight": "47.6px"
+    },
+    ".font-28.line-18": {
+      "lineHeight": "50.4px"
+    },
+    ".font-28.line-19": {
+      "lineHeight": "53.2px"
+    },
+    ".font-28.line-20": {
+      "lineHeight": "56px"
+    },
+    ".font-28.line-21": {
+      "lineHeight": "58.8px"
+    },
+    ".font-28.line-22": {
+      "lineHeight": "61.6px"
+    },
+    ".font-28.line-23": {
+      "lineHeight": "64.4px"
+    },
+    ".font-28.line-24": {
+      "lineHeight": "67.2px"
+    },
+    ".font-28.line-25": {
+      "lineHeight": "70px"
+    },
+    ".font-28.line-26": {
+      "lineHeight": "72.8px"
+    },
+    ".font-28.line-27": {
+      "lineHeight": "75.6px"
+    },
+    ".font-28.line-28": {
+      "lineHeight": "78.4px"
+    },
+    ".font-28.line-29": {
+      "lineHeight": "81.2px"
+    },
+    ".font-28.line-30": {
+      "lineHeight": "84px"
+    },
+    ".font-29": {
+      "fontSize": "29px"
+    },
+    ".font-29.line-3": {
+      "lineHeight": "8.7px"
+    },
+    ".font-29.line-4": {
+      "lineHeight": "11.6px"
+    },
+    ".font-29.line-5": {
+      "lineHeight": "14.5px"
+    },
+    ".font-29.line-6": {
+      "lineHeight": "17.4px"
+    },
+    ".font-29.line-7": {
+      "lineHeight": "20.3px"
+    },
+    ".font-29.line-8": {
+      "lineHeight": "23.2px"
+    },
+    ".font-29.line-9": {
+      "lineHeight": "26.1px"
+    },
+    ".font-29.line-10": {
+      "lineHeight": "29px"
+    },
+    ".font-29.line-11": {
+      "lineHeight": "31.9px"
+    },
+    ".font-29.line-12": {
+      "lineHeight": "34.8px"
+    },
+    ".font-29.line-13": {
+      "lineHeight": "37.7px"
+    },
+    ".font-29.line-14": {
+      "lineHeight": "40.6px"
+    },
+    ".font-29.line-15": {
+      "lineHeight": "43.5px"
+    },
+    ".font-29.line-16": {
+      "lineHeight": "46.4px"
+    },
+    ".font-29.line-17": {
+      "lineHeight": "49.3px"
+    },
+    ".font-29.line-18": {
+      "lineHeight": "52.2px"
+    },
+    ".font-29.line-19": {
+      "lineHeight": "55.1px"
+    },
+    ".font-29.line-20": {
+      "lineHeight": "58px"
+    },
+    ".font-29.line-21": {
+      "lineHeight": "60.9px"
+    },
+    ".font-29.line-22": {
+      "lineHeight": "63.8px"
+    },
+    ".font-29.line-23": {
+      "lineHeight": "66.7px"
+    },
+    ".font-29.line-24": {
+      "lineHeight": "69.6px"
+    },
+    ".font-29.line-25": {
+      "lineHeight": "72.5px"
+    },
+    ".font-29.line-26": {
+      "lineHeight": "75.4px"
+    },
+    ".font-29.line-27": {
+      "lineHeight": "78.3px"
+    },
+    ".font-29.line-28": {
+      "lineHeight": "81.2px"
+    },
+    ".font-29.line-29": {
+      "lineHeight": "84.1px"
+    },
+    ".font-29.line-30": {
+      "lineHeight": "87px"
+    },
+    ".font-30": {
+      "fontSize": "30px"
+    },
+    ".font-30.line-3": {
+      "lineHeight": "9px"
+    },
+    ".font-30.line-4": {
+      "lineHeight": "12px"
+    },
+    ".font-30.line-5": {
+      "lineHeight": "15px"
+    },
+    ".font-30.line-6": {
+      "lineHeight": "18px"
+    },
+    ".font-30.line-7": {
+      "lineHeight": "21px"
+    },
+    ".font-30.line-8": {
+      "lineHeight": "24px"
+    },
+    ".font-30.line-9": {
+      "lineHeight": "27px"
+    },
+    ".font-30.line-10": {
+      "lineHeight": "30px"
+    },
+    ".font-30.line-11": {
+      "lineHeight": "33px"
+    },
+    ".font-30.line-12": {
+      "lineHeight": "36px"
+    },
+    ".font-30.line-13": {
+      "lineHeight": "39px"
+    },
+    ".font-30.line-14": {
+      "lineHeight": "42px"
+    },
+    ".font-30.line-15": {
+      "lineHeight": "45px"
+    },
+    ".font-30.line-16": {
+      "lineHeight": "48px"
+    },
+    ".font-30.line-17": {
+      "lineHeight": "51px"
+    },
+    ".font-30.line-18": {
+      "lineHeight": "54px"
+    },
+    ".font-30.line-19": {
+      "lineHeight": "57px"
+    },
+    ".font-30.line-20": {
+      "lineHeight": "60px"
+    },
+    ".font-30.line-21": {
+      "lineHeight": "63px"
+    },
+    ".font-30.line-22": {
+      "lineHeight": "66px"
+    },
+    ".font-30.line-23": {
+      "lineHeight": "69px"
+    },
+    ".font-30.line-24": {
+      "lineHeight": "72px"
+    },
+    ".font-30.line-25": {
+      "lineHeight": "75px"
+    },
+    ".font-30.line-26": {
+      "lineHeight": "78px"
+    },
+    ".font-30.line-27": {
+      "lineHeight": "81px"
+    },
+    ".font-30.line-28": {
+      "lineHeight": "84px"
+    },
+    ".font-30.line-29": {
+      "lineHeight": "87px"
+    },
+    ".font-30.line-30": {
+      "lineHeight": "90px"
+    },
+    ".font-31": {
+      "fontSize": "31px"
+    },
+    ".font-31.line-3": {
+      "lineHeight": "9.3px"
+    },
+    ".font-31.line-4": {
+      "lineHeight": "12.4px"
+    },
+    ".font-31.line-5": {
+      "lineHeight": "15.5px"
+    },
+    ".font-31.line-6": {
+      "lineHeight": "18.6px"
+    },
+    ".font-31.line-7": {
+      "lineHeight": "21.7px"
+    },
+    ".font-31.line-8": {
+      "lineHeight": "24.8px"
+    },
+    ".font-31.line-9": {
+      "lineHeight": "27.9px"
+    },
+    ".font-31.line-10": {
+      "lineHeight": "31px"
+    },
+    ".font-31.line-11": {
+      "lineHeight": "34.1px"
+    },
+    ".font-31.line-12": {
+      "lineHeight": "37.2px"
+    },
+    ".font-31.line-13": {
+      "lineHeight": "40.3px"
+    },
+    ".font-31.line-14": {
+      "lineHeight": "43.4px"
+    },
+    ".font-31.line-15": {
+      "lineHeight": "46.5px"
+    },
+    ".font-31.line-16": {
+      "lineHeight": "49.6px"
+    },
+    ".font-31.line-17": {
+      "lineHeight": "52.7px"
+    },
+    ".font-31.line-18": {
+      "lineHeight": "55.8px"
+    },
+    ".font-31.line-19": {
+      "lineHeight": "58.9px"
+    },
+    ".font-31.line-20": {
+      "lineHeight": "62px"
+    },
+    ".font-31.line-21": {
+      "lineHeight": "65.1px"
+    },
+    ".font-31.line-22": {
+      "lineHeight": "68.2px"
+    },
+    ".font-31.line-23": {
+      "lineHeight": "71.3px"
+    },
+    ".font-31.line-24": {
+      "lineHeight": "74.4px"
+    },
+    ".font-31.line-25": {
+      "lineHeight": "77.5px"
+    },
+    ".font-31.line-26": {
+      "lineHeight": "80.6px"
+    },
+    ".font-31.line-27": {
+      "lineHeight": "83.7px"
+    },
+    ".font-31.line-28": {
+      "lineHeight": "86.8px"
+    },
+    ".font-31.line-29": {
+      "lineHeight": "89.9px"
+    },
+    ".font-31.line-30": {
+      "lineHeight": "93px"
+    },
+    ".font-32": {
+      "fontSize": "32px"
+    },
+    ".font-32.line-3": {
+      "lineHeight": "9.6px"
+    },
+    ".font-32.line-4": {
+      "lineHeight": "12.8px"
+    },
+    ".font-32.line-5": {
+      "lineHeight": "16px"
+    },
+    ".font-32.line-6": {
+      "lineHeight": "19.2px"
+    },
+    ".font-32.line-7": {
+      "lineHeight": "22.4px"
+    },
+    ".font-32.line-8": {
+      "lineHeight": "25.6px"
+    },
+    ".font-32.line-9": {
+      "lineHeight": "28.8px"
+    },
+    ".font-32.line-10": {
+      "lineHeight": "32px"
+    },
+    ".font-32.line-11": {
+      "lineHeight": "35.2px"
+    },
+    ".font-32.line-12": {
+      "lineHeight": "38.4px"
+    },
+    ".font-32.line-13": {
+      "lineHeight": "41.6px"
+    },
+    ".font-32.line-14": {
+      "lineHeight": "44.8px"
+    },
+    ".font-32.line-15": {
+      "lineHeight": "48px"
+    },
+    ".font-32.line-16": {
+      "lineHeight": "51.2px"
+    },
+    ".font-32.line-17": {
+      "lineHeight": "54.4px"
+    },
+    ".font-32.line-18": {
+      "lineHeight": "57.6px"
+    },
+    ".font-32.line-19": {
+      "lineHeight": "60.8px"
+    },
+    ".font-32.line-20": {
+      "lineHeight": "64px"
+    },
+    ".font-32.line-21": {
+      "lineHeight": "67.2px"
+    },
+    ".font-32.line-22": {
+      "lineHeight": "70.4px"
+    },
+    ".font-32.line-23": {
+      "lineHeight": "73.6px"
+    },
+    ".font-32.line-24": {
+      "lineHeight": "76.8px"
+    },
+    ".font-32.line-25": {
+      "lineHeight": "80px"
+    },
+    ".font-32.line-26": {
+      "lineHeight": "83.2px"
+    },
+    ".font-32.line-27": {
+      "lineHeight": "86.4px"
+    },
+    ".font-32.line-28": {
+      "lineHeight": "89.6px"
+    },
+    ".font-32.line-29": {
+      "lineHeight": "92.8px"
+    },
+    ".font-32.line-30": {
+      "lineHeight": "96px"
+    },
+    ".font-33": {
+      "fontSize": "33px"
+    },
+    ".font-33.line-3": {
+      "lineHeight": "9.9px"
+    },
+    ".font-33.line-4": {
+      "lineHeight": "13.2px"
+    },
+    ".font-33.line-5": {
+      "lineHeight": "16.5px"
+    },
+    ".font-33.line-6": {
+      "lineHeight": "19.8px"
+    },
+    ".font-33.line-7": {
+      "lineHeight": "23.1px"
+    },
+    ".font-33.line-8": {
+      "lineHeight": "26.4px"
+    },
+    ".font-33.line-9": {
+      "lineHeight": "29.7px"
+    },
+    ".font-33.line-10": {
+      "lineHeight": "33px"
+    },
+    ".font-33.line-11": {
+      "lineHeight": "36.3px"
+    },
+    ".font-33.line-12": {
+      "lineHeight": "39.6px"
+    },
+    ".font-33.line-13": {
+      "lineHeight": "42.9px"
+    },
+    ".font-33.line-14": {
+      "lineHeight": "46.2px"
+    },
+    ".font-33.line-15": {
+      "lineHeight": "49.5px"
+    },
+    ".font-33.line-16": {
+      "lineHeight": "52.8px"
+    },
+    ".font-33.line-17": {
+      "lineHeight": "56.1px"
+    },
+    ".font-33.line-18": {
+      "lineHeight": "59.4px"
+    },
+    ".font-33.line-19": {
+      "lineHeight": "62.7px"
+    },
+    ".font-33.line-20": {
+      "lineHeight": "66px"
+    },
+    ".font-33.line-21": {
+      "lineHeight": "69.3px"
+    },
+    ".font-33.line-22": {
+      "lineHeight": "72.6px"
+    },
+    ".font-33.line-23": {
+      "lineHeight": "75.9px"
+    },
+    ".font-33.line-24": {
+      "lineHeight": "79.2px"
+    },
+    ".font-33.line-25": {
+      "lineHeight": "82.5px"
+    },
+    ".font-33.line-26": {
+      "lineHeight": "85.8px"
+    },
+    ".font-33.line-27": {
+      "lineHeight": "89.1px"
+    },
+    ".font-33.line-28": {
+      "lineHeight": "92.4px"
+    },
+    ".font-33.line-29": {
+      "lineHeight": "95.7px"
+    },
+    ".font-33.line-30": {
+      "lineHeight": "99px"
+    },
+    ".font-34": {
+      "fontSize": "34px"
+    },
+    ".font-34.line-3": {
+      "lineHeight": "10.2px"
+    },
+    ".font-34.line-4": {
+      "lineHeight": "13.6px"
+    },
+    ".font-34.line-5": {
+      "lineHeight": "17px"
+    },
+    ".font-34.line-6": {
+      "lineHeight": "20.4px"
+    },
+    ".font-34.line-7": {
+      "lineHeight": "23.8px"
+    },
+    ".font-34.line-8": {
+      "lineHeight": "27.2px"
+    },
+    ".font-34.line-9": {
+      "lineHeight": "30.6px"
+    },
+    ".font-34.line-10": {
+      "lineHeight": "34px"
+    },
+    ".font-34.line-11": {
+      "lineHeight": "37.4px"
+    },
+    ".font-34.line-12": {
+      "lineHeight": "40.8px"
+    },
+    ".font-34.line-13": {
+      "lineHeight": "44.2px"
+    },
+    ".font-34.line-14": {
+      "lineHeight": "47.6px"
+    },
+    ".font-34.line-15": {
+      "lineHeight": "51px"
+    },
+    ".font-34.line-16": {
+      "lineHeight": "54.4px"
+    },
+    ".font-34.line-17": {
+      "lineHeight": "57.8px"
+    },
+    ".font-34.line-18": {
+      "lineHeight": "61.2px"
+    },
+    ".font-34.line-19": {
+      "lineHeight": "64.6px"
+    },
+    ".font-34.line-20": {
+      "lineHeight": "68px"
+    },
+    ".font-34.line-21": {
+      "lineHeight": "71.4px"
+    },
+    ".font-34.line-22": {
+      "lineHeight": "74.8px"
+    },
+    ".font-34.line-23": {
+      "lineHeight": "78.2px"
+    },
+    ".font-34.line-24": {
+      "lineHeight": "81.6px"
+    },
+    ".font-34.line-25": {
+      "lineHeight": "85px"
+    },
+    ".font-34.line-26": {
+      "lineHeight": "88.4px"
+    },
+    ".font-34.line-27": {
+      "lineHeight": "91.8px"
+    },
+    ".font-34.line-28": {
+      "lineHeight": "95.2px"
+    },
+    ".font-34.line-29": {
+      "lineHeight": "98.6px"
+    },
+    ".font-34.line-30": {
+      "lineHeight": "102px"
+    },
+    ".font-35": {
+      "fontSize": "35px"
+    },
+    ".font-35.line-3": {
+      "lineHeight": "10.5px"
+    },
+    ".font-35.line-4": {
+      "lineHeight": "14px"
+    },
+    ".font-35.line-5": {
+      "lineHeight": "17.5px"
+    },
+    ".font-35.line-6": {
+      "lineHeight": "21px"
+    },
+    ".font-35.line-7": {
+      "lineHeight": "24.5px"
+    },
+    ".font-35.line-8": {
+      "lineHeight": "28px"
+    },
+    ".font-35.line-9": {
+      "lineHeight": "31.5px"
+    },
+    ".font-35.line-10": {
+      "lineHeight": "35px"
+    },
+    ".font-35.line-11": {
+      "lineHeight": "38.5px"
+    },
+    ".font-35.line-12": {
+      "lineHeight": "42px"
+    },
+    ".font-35.line-13": {
+      "lineHeight": "45.5px"
+    },
+    ".font-35.line-14": {
+      "lineHeight": "49px"
+    },
+    ".font-35.line-15": {
+      "lineHeight": "52.5px"
+    },
+    ".font-35.line-16": {
+      "lineHeight": "56px"
+    },
+    ".font-35.line-17": {
+      "lineHeight": "59.5px"
+    },
+    ".font-35.line-18": {
+      "lineHeight": "63px"
+    },
+    ".font-35.line-19": {
+      "lineHeight": "66.5px"
+    },
+    ".font-35.line-20": {
+      "lineHeight": "70px"
+    },
+    ".font-35.line-21": {
+      "lineHeight": "73.5px"
+    },
+    ".font-35.line-22": {
+      "lineHeight": "77px"
+    },
+    ".font-35.line-23": {
+      "lineHeight": "80.5px"
+    },
+    ".font-35.line-24": {
+      "lineHeight": "84px"
+    },
+    ".font-35.line-25": {
+      "lineHeight": "87.5px"
+    },
+    ".font-35.line-26": {
+      "lineHeight": "91px"
+    },
+    ".font-35.line-27": {
+      "lineHeight": "94.5px"
+    },
+    ".font-35.line-28": {
+      "lineHeight": "98px"
+    },
+    ".font-35.line-29": {
+      "lineHeight": "101.5px"
+    },
+    ".font-35.line-30": {
+      "lineHeight": "105px"
+    },
+    ".font-36": {
+      "fontSize": "36px"
+    },
+    ".font-36.line-3": {
+      "lineHeight": "10.8px"
+    },
+    ".font-36.line-4": {
+      "lineHeight": "14.4px"
+    },
+    ".font-36.line-5": {
+      "lineHeight": "18px"
+    },
+    ".font-36.line-6": {
+      "lineHeight": "21.6px"
+    },
+    ".font-36.line-7": {
+      "lineHeight": "25.2px"
+    },
+    ".font-36.line-8": {
+      "lineHeight": "28.8px"
+    },
+    ".font-36.line-9": {
+      "lineHeight": "32.4px"
+    },
+    ".font-36.line-10": {
+      "lineHeight": "36px"
+    },
+    ".font-36.line-11": {
+      "lineHeight": "39.6px"
+    },
+    ".font-36.line-12": {
+      "lineHeight": "43.2px"
+    },
+    ".font-36.line-13": {
+      "lineHeight": "46.8px"
+    },
+    ".font-36.line-14": {
+      "lineHeight": "50.4px"
+    },
+    ".font-36.line-15": {
+      "lineHeight": "54px"
+    },
+    ".font-36.line-16": {
+      "lineHeight": "57.6px"
+    },
+    ".font-36.line-17": {
+      "lineHeight": "61.2px"
+    },
+    ".font-36.line-18": {
+      "lineHeight": "64.8px"
+    },
+    ".font-36.line-19": {
+      "lineHeight": "68.4px"
+    },
+    ".font-36.line-20": {
+      "lineHeight": "72px"
+    },
+    ".font-36.line-21": {
+      "lineHeight": "75.6px"
+    },
+    ".font-36.line-22": {
+      "lineHeight": "79.2px"
+    },
+    ".font-36.line-23": {
+      "lineHeight": "82.8px"
+    },
+    ".font-36.line-24": {
+      "lineHeight": "86.4px"
+    },
+    ".font-36.line-25": {
+      "lineHeight": "90px"
+    },
+    ".font-36.line-26": {
+      "lineHeight": "93.6px"
+    },
+    ".font-36.line-27": {
+      "lineHeight": "97.2px"
+    },
+    ".font-36.line-28": {
+      "lineHeight": "100.8px"
+    },
+    ".font-36.line-29": {
+      "lineHeight": "104.4px"
+    },
+    ".font-36.line-30": {
+      "lineHeight": "108px"
+    },
+    ".font-37": {
+      "fontSize": "37px"
+    },
+    ".font-37.line-3": {
+      "lineHeight": "11.1px"
+    },
+    ".font-37.line-4": {
+      "lineHeight": "14.8px"
+    },
+    ".font-37.line-5": {
+      "lineHeight": "18.5px"
+    },
+    ".font-37.line-6": {
+      "lineHeight": "22.2px"
+    },
+    ".font-37.line-7": {
+      "lineHeight": "25.9px"
+    },
+    ".font-37.line-8": {
+      "lineHeight": "29.6px"
+    },
+    ".font-37.line-9": {
+      "lineHeight": "33.3px"
+    },
+    ".font-37.line-10": {
+      "lineHeight": "37px"
+    },
+    ".font-37.line-11": {
+      "lineHeight": "40.7px"
+    },
+    ".font-37.line-12": {
+      "lineHeight": "44.4px"
+    },
+    ".font-37.line-13": {
+      "lineHeight": "48.1px"
+    },
+    ".font-37.line-14": {
+      "lineHeight": "51.8px"
+    },
+    ".font-37.line-15": {
+      "lineHeight": "55.5px"
+    },
+    ".font-37.line-16": {
+      "lineHeight": "59.2px"
+    },
+    ".font-37.line-17": {
+      "lineHeight": "62.9px"
+    },
+    ".font-37.line-18": {
+      "lineHeight": "66.6px"
+    },
+    ".font-37.line-19": {
+      "lineHeight": "70.3px"
+    },
+    ".font-37.line-20": {
+      "lineHeight": "74px"
+    },
+    ".font-37.line-21": {
+      "lineHeight": "77.7px"
+    },
+    ".font-37.line-22": {
+      "lineHeight": "81.4px"
+    },
+    ".font-37.line-23": {
+      "lineHeight": "85.1px"
+    },
+    ".font-37.line-24": {
+      "lineHeight": "88.8px"
+    },
+    ".font-37.line-25": {
+      "lineHeight": "92.5px"
+    },
+    ".font-37.line-26": {
+      "lineHeight": "96.2px"
+    },
+    ".font-37.line-27": {
+      "lineHeight": "99.9px"
+    },
+    ".font-37.line-28": {
+      "lineHeight": "103.6px"
+    },
+    ".font-37.line-29": {
+      "lineHeight": "107.3px"
+    },
+    ".font-37.line-30": {
+      "lineHeight": "111px"
+    },
+    ".font-38": {
+      "fontSize": "38px"
+    },
+    ".font-38.line-3": {
+      "lineHeight": "11.4px"
+    },
+    ".font-38.line-4": {
+      "lineHeight": "15.2px"
+    },
+    ".font-38.line-5": {
+      "lineHeight": "19px"
+    },
+    ".font-38.line-6": {
+      "lineHeight": "22.8px"
+    },
+    ".font-38.line-7": {
+      "lineHeight": "26.6px"
+    },
+    ".font-38.line-8": {
+      "lineHeight": "30.4px"
+    },
+    ".font-38.line-9": {
+      "lineHeight": "34.2px"
+    },
+    ".font-38.line-10": {
+      "lineHeight": "38px"
+    },
+    ".font-38.line-11": {
+      "lineHeight": "41.8px"
+    },
+    ".font-38.line-12": {
+      "lineHeight": "45.6px"
+    },
+    ".font-38.line-13": {
+      "lineHeight": "49.4px"
+    },
+    ".font-38.line-14": {
+      "lineHeight": "53.2px"
+    },
+    ".font-38.line-15": {
+      "lineHeight": "57px"
+    },
+    ".font-38.line-16": {
+      "lineHeight": "60.8px"
+    },
+    ".font-38.line-17": {
+      "lineHeight": "64.6px"
+    },
+    ".font-38.line-18": {
+      "lineHeight": "68.4px"
+    },
+    ".font-38.line-19": {
+      "lineHeight": "72.2px"
+    },
+    ".font-38.line-20": {
+      "lineHeight": "76px"
+    },
+    ".font-38.line-21": {
+      "lineHeight": "79.8px"
+    },
+    ".font-38.line-22": {
+      "lineHeight": "83.6px"
+    },
+    ".font-38.line-23": {
+      "lineHeight": "87.4px"
+    },
+    ".font-38.line-24": {
+      "lineHeight": "91.2px"
+    },
+    ".font-38.line-25": {
+      "lineHeight": "95px"
+    },
+    ".font-38.line-26": {
+      "lineHeight": "98.8px"
+    },
+    ".font-38.line-27": {
+      "lineHeight": "102.6px"
+    },
+    ".font-38.line-28": {
+      "lineHeight": "106.4px"
+    },
+    ".font-38.line-29": {
+      "lineHeight": "110.2px"
+    },
+    ".font-38.line-30": {
+      "lineHeight": "114px"
+    },
+    ".font-39": {
+      "fontSize": "39px"
+    },
+    ".font-39.line-3": {
+      "lineHeight": "11.7px"
+    },
+    ".font-39.line-4": {
+      "lineHeight": "15.6px"
+    },
+    ".font-39.line-5": {
+      "lineHeight": "19.5px"
+    },
+    ".font-39.line-6": {
+      "lineHeight": "23.4px"
+    },
+    ".font-39.line-7": {
+      "lineHeight": "27.3px"
+    },
+    ".font-39.line-8": {
+      "lineHeight": "31.2px"
+    },
+    ".font-39.line-9": {
+      "lineHeight": "35.1px"
+    },
+    ".font-39.line-10": {
+      "lineHeight": "39px"
+    },
+    ".font-39.line-11": {
+      "lineHeight": "42.9px"
+    },
+    ".font-39.line-12": {
+      "lineHeight": "46.8px"
+    },
+    ".font-39.line-13": {
+      "lineHeight": "50.7px"
+    },
+    ".font-39.line-14": {
+      "lineHeight": "54.6px"
+    },
+    ".font-39.line-15": {
+      "lineHeight": "58.5px"
+    },
+    ".font-39.line-16": {
+      "lineHeight": "62.4px"
+    },
+    ".font-39.line-17": {
+      "lineHeight": "66.3px"
+    },
+    ".font-39.line-18": {
+      "lineHeight": "70.2px"
+    },
+    ".font-39.line-19": {
+      "lineHeight": "74.1px"
+    },
+    ".font-39.line-20": {
+      "lineHeight": "78px"
+    },
+    ".font-39.line-21": {
+      "lineHeight": "81.9px"
+    },
+    ".font-39.line-22": {
+      "lineHeight": "85.8px"
+    },
+    ".font-39.line-23": {
+      "lineHeight": "89.7px"
+    },
+    ".font-39.line-24": {
+      "lineHeight": "93.6px"
+    },
+    ".font-39.line-25": {
+      "lineHeight": "97.5px"
+    },
+    ".font-39.line-26": {
+      "lineHeight": "101.4px"
+    },
+    ".font-39.line-27": {
+      "lineHeight": "105.3px"
+    },
+    ".font-39.line-28": {
+      "lineHeight": "109.2px"
+    },
+    ".font-39.line-29": {
+      "lineHeight": "113.1px"
+    },
+    ".font-39.line-30": {
+      "lineHeight": "117px"
+    },
+    ".font-40": {
+      "fontSize": "40px"
+    },
+    ".font-40.line-3": {
+      "lineHeight": "12px"
+    },
+    ".font-40.line-4": {
+      "lineHeight": "16px"
+    },
+    ".font-40.line-5": {
+      "lineHeight": "20px"
+    },
+    ".font-40.line-6": {
+      "lineHeight": "24px"
+    },
+    ".font-40.line-7": {
+      "lineHeight": "28px"
+    },
+    ".font-40.line-8": {
+      "lineHeight": "32px"
+    },
+    ".font-40.line-9": {
+      "lineHeight": "36px"
+    },
+    ".font-40.line-10": {
+      "lineHeight": "40px"
+    },
+    ".font-40.line-11": {
+      "lineHeight": "44px"
+    },
+    ".font-40.line-12": {
+      "lineHeight": "48px"
+    },
+    ".font-40.line-13": {
+      "lineHeight": "52px"
+    },
+    ".font-40.line-14": {
+      "lineHeight": "56px"
+    },
+    ".font-40.line-15": {
+      "lineHeight": "60px"
+    },
+    ".font-40.line-16": {
+      "lineHeight": "64px"
+    },
+    ".font-40.line-17": {
+      "lineHeight": "68px"
+    },
+    ".font-40.line-18": {
+      "lineHeight": "72px"
+    },
+    ".font-40.line-19": {
+      "lineHeight": "76px"
+    },
+    ".font-40.line-20": {
+      "lineHeight": "80px"
+    },
+    ".font-40.line-21": {
+      "lineHeight": "84px"
+    },
+    ".font-40.line-22": {
+      "lineHeight": "88px"
+    },
+    ".font-40.line-23": {
+      "lineHeight": "92px"
+    },
+    ".font-40.line-24": {
+      "lineHeight": "96px"
+    },
+    ".font-40.line-25": {
+      "lineHeight": "100px"
+    },
+    ".font-40.line-26": {
+      "lineHeight": "104px"
+    },
+    ".font-40.line-27": {
+      "lineHeight": "108px"
+    },
+    ".font-40.line-28": {
+      "lineHeight": "112px"
+    },
+    ".font-40.line-29": {
+      "lineHeight": "116px"
+    },
+    ".font-40.line-30": {
+      "lineHeight": "120px"
+    },
+    ".font-41": {
+      "fontSize": "41px"
+    },
+    ".font-41.line-3": {
+      "lineHeight": "12.3px"
+    },
+    ".font-41.line-4": {
+      "lineHeight": "16.4px"
+    },
+    ".font-41.line-5": {
+      "lineHeight": "20.5px"
+    },
+    ".font-41.line-6": {
+      "lineHeight": "24.6px"
+    },
+    ".font-41.line-7": {
+      "lineHeight": "28.7px"
+    },
+    ".font-41.line-8": {
+      "lineHeight": "32.8px"
+    },
+    ".font-41.line-9": {
+      "lineHeight": "36.9px"
+    },
+    ".font-41.line-10": {
+      "lineHeight": "41px"
+    },
+    ".font-41.line-11": {
+      "lineHeight": "45.1px"
+    },
+    ".font-41.line-12": {
+      "lineHeight": "49.2px"
+    },
+    ".font-41.line-13": {
+      "lineHeight": "53.3px"
+    },
+    ".font-41.line-14": {
+      "lineHeight": "57.4px"
+    },
+    ".font-41.line-15": {
+      "lineHeight": "61.5px"
+    },
+    ".font-41.line-16": {
+      "lineHeight": "65.6px"
+    },
+    ".font-41.line-17": {
+      "lineHeight": "69.7px"
+    },
+    ".font-41.line-18": {
+      "lineHeight": "73.8px"
+    },
+    ".font-41.line-19": {
+      "lineHeight": "77.9px"
+    },
+    ".font-41.line-20": {
+      "lineHeight": "82px"
+    },
+    ".font-41.line-21": {
+      "lineHeight": "86.1px"
+    },
+    ".font-41.line-22": {
+      "lineHeight": "90.2px"
+    },
+    ".font-41.line-23": {
+      "lineHeight": "94.3px"
+    },
+    ".font-41.line-24": {
+      "lineHeight": "98.4px"
+    },
+    ".font-41.line-25": {
+      "lineHeight": "102.5px"
+    },
+    ".font-41.line-26": {
+      "lineHeight": "106.6px"
+    },
+    ".font-41.line-27": {
+      "lineHeight": "110.7px"
+    },
+    ".font-41.line-28": {
+      "lineHeight": "114.8px"
+    },
+    ".font-41.line-29": {
+      "lineHeight": "118.9px"
+    },
+    ".font-41.line-30": {
+      "lineHeight": "123px"
+    },
+    ".font-42": {
+      "fontSize": "42px"
+    },
+    ".font-42.line-3": {
+      "lineHeight": "12.6px"
+    },
+    ".font-42.line-4": {
+      "lineHeight": "16.8px"
+    },
+    ".font-42.line-5": {
+      "lineHeight": "21px"
+    },
+    ".font-42.line-6": {
+      "lineHeight": "25.2px"
+    },
+    ".font-42.line-7": {
+      "lineHeight": "29.4px"
+    },
+    ".font-42.line-8": {
+      "lineHeight": "33.6px"
+    },
+    ".font-42.line-9": {
+      "lineHeight": "37.8px"
+    },
+    ".font-42.line-10": {
+      "lineHeight": "42px"
+    },
+    ".font-42.line-11": {
+      "lineHeight": "46.2px"
+    },
+    ".font-42.line-12": {
+      "lineHeight": "50.4px"
+    },
+    ".font-42.line-13": {
+      "lineHeight": "54.6px"
+    },
+    ".font-42.line-14": {
+      "lineHeight": "58.8px"
+    },
+    ".font-42.line-15": {
+      "lineHeight": "63px"
+    },
+    ".font-42.line-16": {
+      "lineHeight": "67.2px"
+    },
+    ".font-42.line-17": {
+      "lineHeight": "71.4px"
+    },
+    ".font-42.line-18": {
+      "lineHeight": "75.6px"
+    },
+    ".font-42.line-19": {
+      "lineHeight": "79.8px"
+    },
+    ".font-42.line-20": {
+      "lineHeight": "84px"
+    },
+    ".font-42.line-21": {
+      "lineHeight": "88.2px"
+    },
+    ".font-42.line-22": {
+      "lineHeight": "92.4px"
+    },
+    ".font-42.line-23": {
+      "lineHeight": "96.6px"
+    },
+    ".font-42.line-24": {
+      "lineHeight": "100.8px"
+    },
+    ".font-42.line-25": {
+      "lineHeight": "105px"
+    },
+    ".font-42.line-26": {
+      "lineHeight": "109.2px"
+    },
+    ".font-42.line-27": {
+      "lineHeight": "113.4px"
+    },
+    ".font-42.line-28": {
+      "lineHeight": "117.6px"
+    },
+    ".font-42.line-29": {
+      "lineHeight": "121.8px"
+    },
+    ".font-42.line-30": {
+      "lineHeight": "126px"
+    },
+    ".font-43": {
+      "fontSize": "43px"
+    },
+    ".font-43.line-3": {
+      "lineHeight": "12.9px"
+    },
+    ".font-43.line-4": {
+      "lineHeight": "17.2px"
+    },
+    ".font-43.line-5": {
+      "lineHeight": "21.5px"
+    },
+    ".font-43.line-6": {
+      "lineHeight": "25.8px"
+    },
+    ".font-43.line-7": {
+      "lineHeight": "30.1px"
+    },
+    ".font-43.line-8": {
+      "lineHeight": "34.4px"
+    },
+    ".font-43.line-9": {
+      "lineHeight": "38.7px"
+    },
+    ".font-43.line-10": {
+      "lineHeight": "43px"
+    },
+    ".font-43.line-11": {
+      "lineHeight": "47.3px"
+    },
+    ".font-43.line-12": {
+      "lineHeight": "51.6px"
+    },
+    ".font-43.line-13": {
+      "lineHeight": "55.9px"
+    },
+    ".font-43.line-14": {
+      "lineHeight": "60.2px"
+    },
+    ".font-43.line-15": {
+      "lineHeight": "64.5px"
+    },
+    ".font-43.line-16": {
+      "lineHeight": "68.8px"
+    },
+    ".font-43.line-17": {
+      "lineHeight": "73.1px"
+    },
+    ".font-43.line-18": {
+      "lineHeight": "77.4px"
+    },
+    ".font-43.line-19": {
+      "lineHeight": "81.7px"
+    },
+    ".font-43.line-20": {
+      "lineHeight": "86px"
+    },
+    ".font-43.line-21": {
+      "lineHeight": "90.3px"
+    },
+    ".font-43.line-22": {
+      "lineHeight": "94.6px"
+    },
+    ".font-43.line-23": {
+      "lineHeight": "98.9px"
+    },
+    ".font-43.line-24": {
+      "lineHeight": "103.2px"
+    },
+    ".font-43.line-25": {
+      "lineHeight": "107.5px"
+    },
+    ".font-43.line-26": {
+      "lineHeight": "111.8px"
+    },
+    ".font-43.line-27": {
+      "lineHeight": "116.1px"
+    },
+    ".font-43.line-28": {
+      "lineHeight": "120.4px"
+    },
+    ".font-43.line-29": {
+      "lineHeight": "124.7px"
+    },
+    ".font-43.line-30": {
+      "lineHeight": "129px"
+    },
+    ".font-44": {
+      "fontSize": "44px"
+    },
+    ".font-44.line-3": {
+      "lineHeight": "13.2px"
+    },
+    ".font-44.line-4": {
+      "lineHeight": "17.6px"
+    },
+    ".font-44.line-5": {
+      "lineHeight": "22px"
+    },
+    ".font-44.line-6": {
+      "lineHeight": "26.4px"
+    },
+    ".font-44.line-7": {
+      "lineHeight": "30.8px"
+    },
+    ".font-44.line-8": {
+      "lineHeight": "35.2px"
+    },
+    ".font-44.line-9": {
+      "lineHeight": "39.6px"
+    },
+    ".font-44.line-10": {
+      "lineHeight": "44px"
+    },
+    ".font-44.line-11": {
+      "lineHeight": "48.4px"
+    },
+    ".font-44.line-12": {
+      "lineHeight": "52.8px"
+    },
+    ".font-44.line-13": {
+      "lineHeight": "57.2px"
+    },
+    ".font-44.line-14": {
+      "lineHeight": "61.6px"
+    },
+    ".font-44.line-15": {
+      "lineHeight": "66px"
+    },
+    ".font-44.line-16": {
+      "lineHeight": "70.4px"
+    },
+    ".font-44.line-17": {
+      "lineHeight": "74.8px"
+    },
+    ".font-44.line-18": {
+      "lineHeight": "79.2px"
+    },
+    ".font-44.line-19": {
+      "lineHeight": "83.6px"
+    },
+    ".font-44.line-20": {
+      "lineHeight": "88px"
+    },
+    ".font-44.line-21": {
+      "lineHeight": "92.4px"
+    },
+    ".font-44.line-22": {
+      "lineHeight": "96.8px"
+    },
+    ".font-44.line-23": {
+      "lineHeight": "101.2px"
+    },
+    ".font-44.line-24": {
+      "lineHeight": "105.6px"
+    },
+    ".font-44.line-25": {
+      "lineHeight": "110px"
+    },
+    ".font-44.line-26": {
+      "lineHeight": "114.4px"
+    },
+    ".font-44.line-27": {
+      "lineHeight": "118.8px"
+    },
+    ".font-44.line-28": {
+      "lineHeight": "123.2px"
+    },
+    ".font-44.line-29": {
+      "lineHeight": "127.6px"
+    },
+    ".font-44.line-30": {
+      "lineHeight": "132px"
+    },
+    ".font-45": {
+      "fontSize": "45px"
+    },
+    ".font-45.line-3": {
+      "lineHeight": "13.5px"
+    },
+    ".font-45.line-4": {
+      "lineHeight": "18px"
+    },
+    ".font-45.line-5": {
+      "lineHeight": "22.5px"
+    },
+    ".font-45.line-6": {
+      "lineHeight": "27px"
+    },
+    ".font-45.line-7": {
+      "lineHeight": "31.5px"
+    },
+    ".font-45.line-8": {
+      "lineHeight": "36px"
+    },
+    ".font-45.line-9": {
+      "lineHeight": "40.5px"
+    },
+    ".font-45.line-10": {
+      "lineHeight": "45px"
+    },
+    ".font-45.line-11": {
+      "lineHeight": "49.5px"
+    },
+    ".font-45.line-12": {
+      "lineHeight": "54px"
+    },
+    ".font-45.line-13": {
+      "lineHeight": "58.5px"
+    },
+    ".font-45.line-14": {
+      "lineHeight": "63px"
+    },
+    ".font-45.line-15": {
+      "lineHeight": "67.5px"
+    },
+    ".font-45.line-16": {
+      "lineHeight": "72px"
+    },
+    ".font-45.line-17": {
+      "lineHeight": "76.5px"
+    },
+    ".font-45.line-18": {
+      "lineHeight": "81px"
+    },
+    ".font-45.line-19": {
+      "lineHeight": "85.5px"
+    },
+    ".font-45.line-20": {
+      "lineHeight": "90px"
+    },
+    ".font-45.line-21": {
+      "lineHeight": "94.5px"
+    },
+    ".font-45.line-22": {
+      "lineHeight": "99px"
+    },
+    ".font-45.line-23": {
+      "lineHeight": "103.5px"
+    },
+    ".font-45.line-24": {
+      "lineHeight": "108px"
+    },
+    ".font-45.line-25": {
+      "lineHeight": "112.5px"
+    },
+    ".font-45.line-26": {
+      "lineHeight": "117px"
+    },
+    ".font-45.line-27": {
+      "lineHeight": "121.5px"
+    },
+    ".font-45.line-28": {
+      "lineHeight": "126px"
+    },
+    ".font-45.line-29": {
+      "lineHeight": "130.5px"
+    },
+    ".font-45.line-30": {
+      "lineHeight": "135px"
+    },
+    ".font-46": {
+      "fontSize": "46px"
+    },
+    ".font-46.line-3": {
+      "lineHeight": "13.8px"
+    },
+    ".font-46.line-4": {
+      "lineHeight": "18.4px"
+    },
+    ".font-46.line-5": {
+      "lineHeight": "23px"
+    },
+    ".font-46.line-6": {
+      "lineHeight": "27.6px"
+    },
+    ".font-46.line-7": {
+      "lineHeight": "32.2px"
+    },
+    ".font-46.line-8": {
+      "lineHeight": "36.8px"
+    },
+    ".font-46.line-9": {
+      "lineHeight": "41.4px"
+    },
+    ".font-46.line-10": {
+      "lineHeight": "46px"
+    },
+    ".font-46.line-11": {
+      "lineHeight": "50.6px"
+    },
+    ".font-46.line-12": {
+      "lineHeight": "55.2px"
+    },
+    ".font-46.line-13": {
+      "lineHeight": "59.8px"
+    },
+    ".font-46.line-14": {
+      "lineHeight": "64.4px"
+    },
+    ".font-46.line-15": {
+      "lineHeight": "69px"
+    },
+    ".font-46.line-16": {
+      "lineHeight": "73.6px"
+    },
+    ".font-46.line-17": {
+      "lineHeight": "78.2px"
+    },
+    ".font-46.line-18": {
+      "lineHeight": "82.8px"
+    },
+    ".font-46.line-19": {
+      "lineHeight": "87.4px"
+    },
+    ".font-46.line-20": {
+      "lineHeight": "92px"
+    },
+    ".font-46.line-21": {
+      "lineHeight": "96.6px"
+    },
+    ".font-46.line-22": {
+      "lineHeight": "101.2px"
+    },
+    ".font-46.line-23": {
+      "lineHeight": "105.8px"
+    },
+    ".font-46.line-24": {
+      "lineHeight": "110.4px"
+    },
+    ".font-46.line-25": {
+      "lineHeight": "115px"
+    },
+    ".font-46.line-26": {
+      "lineHeight": "119.6px"
+    },
+    ".font-46.line-27": {
+      "lineHeight": "124.2px"
+    },
+    ".font-46.line-28": {
+      "lineHeight": "128.8px"
+    },
+    ".font-46.line-29": {
+      "lineHeight": "133.4px"
+    },
+    ".font-46.line-30": {
+      "lineHeight": "138px"
+    },
+    ".font-47": {
+      "fontSize": "47px"
+    },
+    ".font-47.line-3": {
+      "lineHeight": "14.1px"
+    },
+    ".font-47.line-4": {
+      "lineHeight": "18.8px"
+    },
+    ".font-47.line-5": {
+      "lineHeight": "23.5px"
+    },
+    ".font-47.line-6": {
+      "lineHeight": "28.2px"
+    },
+    ".font-47.line-7": {
+      "lineHeight": "32.9px"
+    },
+    ".font-47.line-8": {
+      "lineHeight": "37.6px"
+    },
+    ".font-47.line-9": {
+      "lineHeight": "42.3px"
+    },
+    ".font-47.line-10": {
+      "lineHeight": "47px"
+    },
+    ".font-47.line-11": {
+      "lineHeight": "51.7px"
+    },
+    ".font-47.line-12": {
+      "lineHeight": "56.4px"
+    },
+    ".font-47.line-13": {
+      "lineHeight": "61.1px"
+    },
+    ".font-47.line-14": {
+      "lineHeight": "65.8px"
+    },
+    ".font-47.line-15": {
+      "lineHeight": "70.5px"
+    },
+    ".font-47.line-16": {
+      "lineHeight": "75.2px"
+    },
+    ".font-47.line-17": {
+      "lineHeight": "79.9px"
+    },
+    ".font-47.line-18": {
+      "lineHeight": "84.6px"
+    },
+    ".font-47.line-19": {
+      "lineHeight": "89.3px"
+    },
+    ".font-47.line-20": {
+      "lineHeight": "94px"
+    },
+    ".font-47.line-21": {
+      "lineHeight": "98.7px"
+    },
+    ".font-47.line-22": {
+      "lineHeight": "103.4px"
+    },
+    ".font-47.line-23": {
+      "lineHeight": "108.1px"
+    },
+    ".font-47.line-24": {
+      "lineHeight": "112.8px"
+    },
+    ".font-47.line-25": {
+      "lineHeight": "117.5px"
+    },
+    ".font-47.line-26": {
+      "lineHeight": "122.2px"
+    },
+    ".font-47.line-27": {
+      "lineHeight": "126.9px"
+    },
+    ".font-47.line-28": {
+      "lineHeight": "131.6px"
+    },
+    ".font-47.line-29": {
+      "lineHeight": "136.3px"
+    },
+    ".font-47.line-30": {
+      "lineHeight": "141px"
+    },
+    ".font-48": {
+      "fontSize": "48px"
+    },
+    ".font-48.line-3": {
+      "lineHeight": "14.4px"
+    },
+    ".font-48.line-4": {
+      "lineHeight": "19.2px"
+    },
+    ".font-48.line-5": {
+      "lineHeight": "24px"
+    },
+    ".font-48.line-6": {
+      "lineHeight": "28.8px"
+    },
+    ".font-48.line-7": {
+      "lineHeight": "33.6px"
+    },
+    ".font-48.line-8": {
+      "lineHeight": "38.4px"
+    },
+    ".font-48.line-9": {
+      "lineHeight": "43.2px"
+    },
+    ".font-48.line-10": {
+      "lineHeight": "48px"
+    },
+    ".font-48.line-11": {
+      "lineHeight": "52.8px"
+    },
+    ".font-48.line-12": {
+      "lineHeight": "57.6px"
+    },
+    ".font-48.line-13": {
+      "lineHeight": "62.4px"
+    },
+    ".font-48.line-14": {
+      "lineHeight": "67.2px"
+    },
+    ".font-48.line-15": {
+      "lineHeight": "72px"
+    },
+    ".font-48.line-16": {
+      "lineHeight": "76.8px"
+    },
+    ".font-48.line-17": {
+      "lineHeight": "81.6px"
+    },
+    ".font-48.line-18": {
+      "lineHeight": "86.4px"
+    },
+    ".font-48.line-19": {
+      "lineHeight": "91.2px"
+    },
+    ".font-48.line-20": {
+      "lineHeight": "96px"
+    },
+    ".font-48.line-21": {
+      "lineHeight": "100.8px"
+    },
+    ".font-48.line-22": {
+      "lineHeight": "105.6px"
+    },
+    ".font-48.line-23": {
+      "lineHeight": "110.4px"
+    },
+    ".font-48.line-24": {
+      "lineHeight": "115.2px"
+    },
+    ".font-48.line-25": {
+      "lineHeight": "120px"
+    },
+    ".font-48.line-26": {
+      "lineHeight": "124.8px"
+    },
+    ".font-48.line-27": {
+      "lineHeight": "129.6px"
+    },
+    ".font-48.line-28": {
+      "lineHeight": "134.4px"
+    },
+    ".font-48.line-29": {
+      "lineHeight": "139.2px"
+    },
+    ".font-48.line-30": {
+      "lineHeight": "144px"
+    },
+    ".font-49": {
+      "fontSize": "49px"
+    },
+    ".font-49.line-3": {
+      "lineHeight": "14.7px"
+    },
+    ".font-49.line-4": {
+      "lineHeight": "19.6px"
+    },
+    ".font-49.line-5": {
+      "lineHeight": "24.5px"
+    },
+    ".font-49.line-6": {
+      "lineHeight": "29.4px"
+    },
+    ".font-49.line-7": {
+      "lineHeight": "34.3px"
+    },
+    ".font-49.line-8": {
+      "lineHeight": "39.2px"
+    },
+    ".font-49.line-9": {
+      "lineHeight": "44.1px"
+    },
+    ".font-49.line-10": {
+      "lineHeight": "49px"
+    },
+    ".font-49.line-11": {
+      "lineHeight": "53.9px"
+    },
+    ".font-49.line-12": {
+      "lineHeight": "58.8px"
+    },
+    ".font-49.line-13": {
+      "lineHeight": "63.7px"
+    },
+    ".font-49.line-14": {
+      "lineHeight": "68.6px"
+    },
+    ".font-49.line-15": {
+      "lineHeight": "73.5px"
+    },
+    ".font-49.line-16": {
+      "lineHeight": "78.4px"
+    },
+    ".font-49.line-17": {
+      "lineHeight": "83.3px"
+    },
+    ".font-49.line-18": {
+      "lineHeight": "88.2px"
+    },
+    ".font-49.line-19": {
+      "lineHeight": "93.1px"
+    },
+    ".font-49.line-20": {
+      "lineHeight": "98px"
+    },
+    ".font-49.line-21": {
+      "lineHeight": "102.9px"
+    },
+    ".font-49.line-22": {
+      "lineHeight": "107.8px"
+    },
+    ".font-49.line-23": {
+      "lineHeight": "112.7px"
+    },
+    ".font-49.line-24": {
+      "lineHeight": "117.6px"
+    },
+    ".font-49.line-25": {
+      "lineHeight": "122.5px"
+    },
+    ".font-49.line-26": {
+      "lineHeight": "127.4px"
+    },
+    ".font-49.line-27": {
+      "lineHeight": "132.3px"
+    },
+    ".font-49.line-28": {
+      "lineHeight": "137.2px"
+    },
+    ".font-49.line-29": {
+      "lineHeight": "142.1px"
+    },
+    ".font-49.line-30": {
+      "lineHeight": "147px"
+    },
+    ".font-50": {
+      "fontSize": "50px"
+    },
+    ".font-50.line-3": {
+      "lineHeight": "15px"
+    },
+    ".font-50.line-4": {
+      "lineHeight": "20px"
+    },
+    ".font-50.line-5": {
+      "lineHeight": "25px"
+    },
+    ".font-50.line-6": {
+      "lineHeight": "30px"
+    },
+    ".font-50.line-7": {
+      "lineHeight": "35px"
+    },
+    ".font-50.line-8": {
+      "lineHeight": "40px"
+    },
+    ".font-50.line-9": {
+      "lineHeight": "45px"
+    },
+    ".font-50.line-10": {
+      "lineHeight": "50px"
+    },
+    ".font-50.line-11": {
+      "lineHeight": "55px"
+    },
+    ".font-50.line-12": {
+      "lineHeight": "60px"
+    },
+    ".font-50.line-13": {
+      "lineHeight": "65px"
+    },
+    ".font-50.line-14": {
+      "lineHeight": "70px"
+    },
+    ".font-50.line-15": {
+      "lineHeight": "75px"
+    },
+    ".font-50.line-16": {
+      "lineHeight": "80px"
+    },
+    ".font-50.line-17": {
+      "lineHeight": "85px"
+    },
+    ".font-50.line-18": {
+      "lineHeight": "90px"
+    },
+    ".font-50.line-19": {
+      "lineHeight": "95px"
+    },
+    ".font-50.line-20": {
+      "lineHeight": "100px"
+    },
+    ".font-50.line-21": {
+      "lineHeight": "105px"
+    },
+    ".font-50.line-22": {
+      "lineHeight": "110px"
+    },
+    ".font-50.line-23": {
+      "lineHeight": "115px"
+    },
+    ".font-50.line-24": {
+      "lineHeight": "120px"
+    },
+    ".font-50.line-25": {
+      "lineHeight": "125px"
+    },
+    ".font-50.line-26": {
+      "lineHeight": "130px"
+    },
+    ".font-50.line-27": {
+      "lineHeight": "135px"
+    },
+    ".font-50.line-28": {
+      "lineHeight": "140px"
+    },
+    ".font-50.line-29": {
+      "lineHeight": "145px"
+    },
+    ".font-50.line-30": {
+      "lineHeight": "150px"
+    },
+    ".line-10": {
+      "lineHeight": "40px"
+    },
+    ".line-11": {
+      "lineHeight": "43px"
+    },
+    ".line-12": {
+      "lineHeight": "46px"
+    },
+    ".line-13": {
+      "lineHeight": "49px"
+    },
+    ".line-14": {
+      "lineHeight": "52px"
+    },
+    ".line-15": {
+      "lineHeight": "55px"
+    },
+    ".line-16": {
+      "lineHeight": "58px"
+    },
+    ".line-17": {
+      "lineHeight": "61px"
+    },
+    ".line-18": {
+      "lineHeight": "64px"
+    },
+    ".line-19": {
+      "lineHeight": "67px"
+    },
+    ".line-20": {
+      "lineHeight": "70px"
+    },
+    ".line-21": {
+      "lineHeight": "73px"
+    },
+    ".line-22": {
+      "lineHeight": "76px"
+    },
+    ".line-23": {
+      "lineHeight": "79px"
+    },
+    ".line-24": {
+      "lineHeight": "82px"
+    },
+    ".weight-normal": {
+      "fontWeight": "normal"
+    },
+    ".weight-bold": {
+      "fontWeight": "bold"
+    },
+    ".align-left": {
+      "textAlign": "left"
+    },
+    ".align-center": {
+      "textAlign": "center"
+    },
+    ".color-warm": {
+      "color": "#f2eadb"
+    },
+    ".color-white": {
+      "color": "#ffffff"
+    },
+    ".color-aqua": {
+      "color": "#8ff1e7"
+    },
+    ".color-yellow": {
+      "color": "#ffe28a"
+    },
+    ".color-blue": {
+      "color": "#8ecbff"
+    },
+    ".color-green": {
+      "color": "#b7eda8"
+    }
+  }
+}

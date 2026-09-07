@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Private signing keys
+sign/private.pem
+
+# Common local secrets
+.env
+.env.*
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db

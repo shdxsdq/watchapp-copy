@@ -1,0 +1,53 @@
+{
+  "package": "com.sdq.watchreader",
+  "name": "腕上阅读",
+  "versionName": "1.0.19",
+  "versionCode": 20,
+  "appCategory": [
+    "other"
+  ],
+  "icon": "/assets/images/logo.png",
+  "features": [
+    {
+      "name": "system.router"
+    },
+    {
+      "name": "system.storage"
+    },
+    {
+      "name": "system.file"
+    },
+    {
+      "name": "system.interconnect"
+    }
+  ],
+  "deviceTypeList": [
+    "watch-round",
+    "watch-square"
+  ],
+  "config": {
+    "designWidth": 466,
+    "debug": true
+  },
+  "router": {
+    "entry": "pages/Home",
+    "pages": {
+      "pages/Home": {
+        "component": "index"
+      },
+      "pages/Reader": {
+        "component": "index"
+      },
+      "pages/Settings": {
+        "component": "index"
+      },
+      "pages/Transfer": {
+        "component": "index"
+      }
+    }
+  },
+  "display": {
+    "backgroundColor": "#0b0d10"
+  },
+  "minPlatformVersion": 1070
+}

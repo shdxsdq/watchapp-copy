@@ -1,0 +1,465 @@
+<template>
+  <div
+    class="page"
+  >
+    <list
+      id="readerList"
+      class="reader-list"
+      scrollbar="false"
+      onscrollindex="onReaderIndexChange"
+      onclick="onReaderClick"
+      ontouchstart="onReaderTouchStart"
+      ontouchmove="onReaderTouchMove"
+      ontouchend="onReaderTouchEnd"
+      ontouchcancel="onReaderTouchCancel"
+    >
+      <list-item type="header" class="top-item">
+        <div class="top-bar">
+          <text class="reader-title">{{ article.title }}</text>
+        </div>
+      </list-item>
+
+      <list-item
+        type="paragraph"
+        class="paragraph-item"
+        for="paragraph in article.paragraphs"
+      >
+        <text class="paragraph {{ fontClass }} {{ lineClass }} {{ weightClass }} {{ alignClass }} {{ colorClass }} tag-color-{{ paragraph.color || 'default' }}">{{ paragraph.text || paragraph }}</text>
+      </list-item>
+
+      <list-item type="footer" class="reader-footer">
+        <text class="end-text">已经到底了 · 彩色 TXT 版</text>
+      </list-item>
+    </list>
+  </div>
+</template>
+
+<script>
+import { getArticle } from '../../data/articles.js'
+import {
+  loadReaderState,
+  saveReaderState
+} from '../../utils/readerStorage.js'
+import {
+  IMPORTED_ARTICLE_ID,
+  getImportedArticleMetadata,
+  readImportedArticle
+} from '../../utils/txtLibrary.js'
+
+const ARTICLE_CACHE = {}
+
+export default {
+  data: {
+    articleId: '',
+    article: {
+      id: '',
+      title: '',
+      summary: '',
+      readTime: '',
+      paragraphs: []
+    },
+    pendingParagraphs: [],
+    readerState: {
+      favorites: {},
+      progress: {},
+      scrollProgress: {},
+      fontSize: '30',
+      lineSpacing: '16',
+      fontWeight: 'normal',
+      textAlign: 'left',
+      textColor: 'warm'
+    },
+    currentParagraphIndex: 0,
+    scrollTop: 0,
+    currentListIndex: 0,
+    currentLastListIndex: 0,
+    currentScrollY: 0,
+    touchStartX: 0,
+    touchStartY: 0,
+    touchMoved: false,
+    measuringPage: false,
+    positionReady: false,
+    pageVisible: false,
+    restoreTimer: null,
+    importLoading: false,
+    articleLoading: false,
+    lastTouchPageAt: 0,
+    lastLoadAt: 0,
+    fontClass: 'font-30',
+    lineClass: 'line-16',
+    weightClass: 'weight-normal',
+    alignClass: 'align-left',
+    colorClass: 'color-warm'
+  },
+
+  onInit() {
+    const requestedArticleId = this.articleId || 'quiet-morning'
+    if (requestedArticleId === IMPORTED_ARTICLE_ID) {
+      this.prepareImportedArticle()
+    } else {
+      this.articleId = requestedArticleId
+      const cachedArticle = ARTICLE_CACHE[requestedArticleId]
+      if (cachedArticle) {
+        this.setArticleForDisplay(cachedArticle)
+        this.articleId = cachedArticle.id
+        this.articleLoading = false
+        this.restoreTimer = setTimeout(() => {
+          this.restoreTimer = null
+          this.restoreReadingPosition()
+        }, 0)
+      } else {
+        const article = getArticle(requestedArticleId)
+        ARTICLE_CACHE[requestedArticleId] = article
+        this.setArticleForDisplay(article)
+        this.articleId = article.id
+        this.articleLoading = false
+        this.restoreTimer = setTimeout(() => {
+          this.restoreTimer = null
+          this.restoreReadingPosition()
+        }, 0)
+      }
+    }
+    this.readerState = loadReaderState()
+    this.currentParagraphIndex = Number(
+      this.readerState.progress[this.articleId] || 0
+    )
+    this.applyFontState(this.readerState.fontSize)
+    this.applyReadingSettings()
+  },
+
+  prepareImportedArticle() {
+    this.importLoading = true
+    const metadata = getImportedArticleMetadata()
+    this.articleId = IMPORTED_ARTICLE_ID
+    this.article = {
+      id: IMPORTED_ARTICLE_ID,
+      title: metadata ? metadata.title : '导入的 TXT',
+      summary: metadata ? metadata.summary : '',
+      readTime: metadata ? metadata.readTime : '',
+      paragraphs: ['正在读取 TXT……']
+    }
+
+    readImportedArticle(metadata, {
+      success: (article) => {
+        this.setArticleForDisplay(article)
+        this.importLoading = false
+        if (this.restoreTimer) clearTimeout(this.restoreTimer)
+        this.restoreTimer = setTimeout(() => {
+          this.restoreTimer = null
+          this.restoreReadingPosition()
+        }, 50)
+      },
+      fail: (data, code) => {
+        console.warn('读取导入的 TXT 失败', data, code)
+        this.importLoading = false
+        this.article.paragraphs = ['TXT 读取失败，请从手机重新传入。']
+      }
+    })
+  },
+
+  onReady() {
+    if (this.restoreTimer) clearTimeout(this.restoreTimer)
+    this.restoreTimer = setTimeout(() => {
+      this.restoreTimer = null
+      this.restoreReadingPosition()
+    }, 80)
+  },
+
+  onShow() {
+    this.pageVisible = true
+    const latestState = loadReaderState()
+    this.readerState = latestState
+    this.applyFontState(latestState.fontSize)
+    this.applyReadingSettings()
+  },
+
+  setArticleForDisplay(article) {
+    const paragraphs = article && article.paragraphs ? article.paragraphs : []
+    this.article = { ...article, paragraphs }
+    this.pendingParagraphs = []
+  },
+
+  onReaderTouchStart(event) {
+    const touch = event && event.touches && event.touches[0]
+    this.touchMoved = false
+    if (touch) {
+      this.touchStartX = touch.clientX
+      this.touchStartY = touch.clientY
+    }
+  },
+
+  onReaderTouchMove(event) {
+    const touch = event && event.touches && event.touches[0]
+    if (touch && (Math.abs(touch.clientX - this.touchStartX) > 10 ||
+      Math.abs(touch.clientY - this.touchStartY) > 10)) {
+      this.touchMoved = true
+    }
+  },
+
+  onReaderTouchCancel() {
+    this.touchMoved = true
+  },
+
+  onReaderIndexChange(event) {
+    const first = event && typeof event.first === 'number' ? event.first : 0
+    const last = event && typeof event.last === 'number' ? event.last : first
+    this.currentListIndex = Math.max(0, first)
+    this.currentLastListIndex = Math.max(this.currentListIndex, last)
+    this.currentParagraphIndex = Math.max(0, this.currentListIndex - 1)
+    this.persistReadingPosition()
+  },
+
+  onReaderTouchEnd() {
+    const now = Date.now()
+    if (this.touchMoved || now - this.lastTouchPageAt < 300) return
+    this.lastTouchPageAt = now
+    this.turnPage(this.touchStartX)
+  },
+
+  onReaderClick(event) {
+    // Real devices emit touchend and may emit click afterwards. Keep click as a
+    // preview/mouse fallback, but do not turn twice for the same tap.
+    if (Date.now() - this.lastTouchPageAt < 400) return
+    const x = event && typeof event.clientX === 'number'
+      ? event.clientX
+      : (event && typeof event.pageX === 'number' ? event.pageX : -1)
+    this.turnPage(x)
+  },
+
+  turnPage(x) {
+    if (x < 0 || this.measuringPage || !this.positionReady) return
+    const readerList = this.$element('readerList')
+    if (!readerList) return
+    const direction = x < 233 ? -1 : 1
+    const lastIndex = this.article.paragraphs.length + 1
+    const base = direction > 0 ? this.currentLastListIndex + 1 :
+      this.currentListIndex - 1
+    const target = Math.max(0, Math.min(lastIndex, base))
+    this.currentListIndex = target
+    this.currentLastListIndex = target
+    this.currentParagraphIndex = Math.max(0, target - 1)
+    readerList.scrollTo({ index: target })
+    this.persistReadingPosition()
+  },
+
+  persistReadingPosition() {
+    if (!this.positionReady) return
+    this.readerState.scrollProgress[this.articleId] = this.currentParagraphIndex
+    this.readerState.progress[this.articleId] = this.currentParagraphIndex
+    saveReaderState(this.readerState)
+  },
+
+  restoreReadingPosition() {
+    if ((this.articleId === IMPORTED_ARTICLE_ID && this.importLoading) ||
+      this.articleLoading) return
+    const savedOffset = this.readerState.scrollProgress[this.articleId]
+    if (typeof savedOffset === 'number' && isFinite(savedOffset)) {
+      this.currentParagraphIndex = Math.max(0, Math.floor(savedOffset))
+      this.currentListIndex = this.currentParagraphIndex + 1
+      const readerList = this.$element('readerList')
+      if (readerList) readerList.scrollTo({ index: this.currentListIndex })
+      this.positionReady = true
+      return
+    }
+    // Migrate the previous package's paragraph-based reading position.
+    const index = Math.min(this.currentParagraphIndex, this.article.paragraphs.length - 1)
+    const readerList = this.$element('readerList')
+    if (index > 0 && readerList) {
+      this.currentListIndex = index + 1
+      readerList.scrollTo({ index: this.currentListIndex })
+      this.positionReady = true
+    } else {
+      this.positionReady = true
+    }
+  },
+
+  applyFontState(fontSize) {
+    this.readerState.fontSize = fontSize
+    this.fontClass = `font-${fontSize}`
+  },
+
+  applyReadingSettings() {
+    this.lineClass = `line-${this.readerState.lineSpacing}`
+    this.weightClass = `weight-${this.readerState.fontWeight}`
+    this.alignClass = `align-${this.readerState.textAlign}`
+    this.colorClass = `color-${this.readerState.textColor}`
+  },
+
+  onHide() {
+    this.persistReadingPosition()
+    this.pageVisible = false
+  },
+
+  onDestroy() {
+    this.pageVisible = false
+    if (this.restoreTimer) clearTimeout(this.restoreTimer)
+  }
+}
+</script>
+
+<style lang="scss">
+@import './../../assets/styles/style.scss';
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: $ink;
+}
+
+.reader-list {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: $ink;
+}
+
+.reader-content {
+  width: 100%;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.top-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.top-bar {
+  width: 100%;
+  height: 72px;
+  padding: 12px 24px 6px 24px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reader-title {
+  width: 100%;
+  padding: 0 8px;
+  color: $paper;
+  font-size: 27px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+  lines: 1;
+}
+
+.paragraph-item {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 34px 8px 34px;
+}
+
+.paragraph {
+  width: 100%;
+  color: $paper-soft;
+  text-align: left;
+}
+
+@for $size from 10 through 50 {
+  .font-#{$size} { font-size: #{$size}px; }
+
+  @for $spacing from 3 through 30 {
+    .font-#{$size}.line-#{$spacing} {
+      line-height: #{$size * $spacing / 10}px;
+    }
+  }
+}
+
+.line-10 { line-height: 40px; }
+.line-11 { line-height: 43px; }
+.line-12 { line-height: 46px; }
+.line-13 { line-height: 49px; }
+.line-14 { line-height: 52px; }
+.line-15 { line-height: 55px; }
+.line-16 { line-height: 58px; }
+.line-17 { line-height: 61px; }
+.line-18 { line-height: 64px; }
+.line-19 { line-height: 67px; }
+.line-20 { line-height: 70px; }
+.line-21 { line-height: 73px; }
+.line-22 { line-height: 76px; }
+.line-23 { line-height: 79px; }
+.line-24 { line-height: 82px; }
+
+.weight-normal {
+  font-weight: normal;
+}
+
+.weight-bold {
+  font-weight: bold;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.color-warm {
+  color: #f2eadb;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-aqua {
+  color: #8ff1e7;
+}
+
+.color-yellow {
+  color: #ffe28a;
+}
+
+.color-blue {
+  color: #8ecbff;
+}
+
+.color-green {
+  color: #b7eda8;
+}
+
+.tag-color-blue {
+  color: #8ecbff;
+}
+
+.tag-color-white {
+  color: #ffffff;
+}
+
+.tag-color-red {
+  color: #ff8a8a;
+}
+
+.tag-color-yellow {
+  color: #ffe28a;
+}
+
+.tag-color-green {
+  color: #b7eda8;
+}
+
+.tag-color-aqua {
+  color: #8ff1e7;
+}
+
+.tag-color-warm {
+  color: #f2eadb;
+}
+
+.reader-footer {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 12px 28px 32px 28px;
+}
+
+.end-text {
+  width: 100%;
+  color: $muted-dark;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+</style>

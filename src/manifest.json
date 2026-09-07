@@ -1,0 +1,51 @@
+{
+  "package": "com.sdq.watchreader",
+  "name": "腕上阅读",
+  "versionName": "1.0.38",
+  "versionCode": 39,
+  "appCategory": [
+    "other"
+  ],
+  "icon": "/assets/images/logo.png",
+  "features": [
+    {
+      "name": "blueos.app.appmanager.router"
+    },
+    {
+      "name": "blueos.storage.storage"
+    },
+    {
+      "name": "blueos.storage.file"
+    },
+    {
+      "name": "blueos.bluexlink.connectionManager"
+    }
+  ],
+  "deviceTypeList": [
+    "watch",
+    "watch-square"
+  ],
+  "config": {
+    "designWidth": 466
+  },
+  "router": {
+    "entry": "pages/Home",
+    "pages": {
+      "pages/Home": {
+        "component": "index"
+      },
+      "pages/Reader": {
+        "component": "index"
+      },
+      "pages/Settings": {
+        "component": "index"
+      },
+      "pages/Transfer": {
+        "component": "index"
+      }
+    }
+  },
+  "display": {
+    "backgroundColor": "#0b0d10"
+  }
+}

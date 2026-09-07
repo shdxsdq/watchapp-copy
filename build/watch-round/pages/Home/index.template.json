@@ -1,0 +1,275 @@
+{
+  "type": "div",
+  "class": "page",
+  "style": {
+    "backgroundColor": "#0b0d10",
+    "flexDirection": "column",
+    "height": "100%",
+    "width": "100%"
+  },
+  "styleObjectId": 779992388,
+  "children": [
+    {
+      "type": "div",
+      "class": "header-item",
+      "style": {
+        "flexShrink": 0,
+        "width": "100%"
+      },
+      "children": [
+        {
+          "type": "div",
+          "class": "header",
+          "style": {
+            "flexDirection": "column",
+            "paddingBottom": "22px",
+            "paddingLeft": "34px",
+            "paddingRight": "34px",
+            "paddingTop": "34px",
+            "width": "100%"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "header-row",
+              "style": {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "class": "header-copy",
+                  "style": {
+                    "flexDirection": "column",
+                    "width": "190px"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "value": "腕上阅读"
+                      },
+                      "class": "page-title",
+                      "style": {
+                        "color": "#f7f2e8",
+                        "fontSize": "44px",
+                        "fontWeight": "bold",
+                        "lineHeight": "56px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "class": "header-actions",
+                  "style": {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "width": "174px"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "value": "传书"
+                      },
+                      "bind": 1,
+                      "class": "transfer-button",
+                      "events": {
+                        "click": "openTransfer"
+                      },
+                      "style": {
+                        "backgroundColor": "#173f5e",
+                        "borderRadius": "27px",
+                        "color": "#70c2ff",
+                        "fontSize": "21px",
+                        "height": "54px",
+                        "lineHeight": "54px",
+                        "textAlign": "center",
+                        "width": "78px"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "attr": {
+                        "value": "设置"
+                      },
+                      "bind": 1,
+                      "class": "settings-button",
+                      "events": {
+                        "click": "openSettings"
+                      },
+                      "style": {
+                        "backgroundColor": "#171b21",
+                        "borderRadius": "27px",
+                        "color": "#f7f2e8",
+                        "fontSize": "21px",
+                        "height": "54px",
+                        "lineHeight": "54px",
+                        "textAlign": "center",
+                        "width": "78px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "attr": {
+        "type": "grid",
+        "columns": "2",
+        "scrollbar": "false"
+      },
+      "class": "article-list",
+      "style": {
+        "backgroundColor": "#0b0d10",
+        "flexDirection": "column",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "type": "list-item",
+          "$shown": "importedAvailable",
+          "attr": {
+            "type": "article"
+          },
+          "bind": 2,
+          "class": "card-item",
+          "events": {
+            "swipe": "swipeImportedTxt"
+          },
+          "shown": false,
+          "children": [
+            {
+              "type": "div",
+              "class": "card-row",
+              "children": [
+                {
+                  "type": "div",
+                  "$class": "function () { return ['article-card', 'imported-card', this.importedCardClass]; }",
+                  "bind": 1,
+                  "events": {
+                    "click": "openImportedTxt"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "$value": "importedTitle"
+                      },
+                      "bind": 1,
+                      "class": "article-title"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "$shown": "importedDeleteVisible",
+                  "attr": {
+                    "value": "删除"
+                  },
+                  "bind": 2,
+                  "class": "delete-action",
+                  "events": {
+                    "click": "deleteImportedTxt"
+                  },
+                  "shown": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "article"
+          },
+          "bind": 2,
+          "class": "card-item",
+          "events": {
+            "$swipe": "function (evt) { return this.swipeLocalBook(this.book.id, this.$event, evt); }"
+          },
+          "repeat": {
+            "$exp": "localBooks",
+            "value": "book"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "card-row",
+              "children": [
+                {
+                  "type": "div",
+                  "$class": "function () { return ['article-card', this.book.id === this.localDeleteTarget ? 'article-card-swiped' : '']; }",
+                  "bind": 1,
+                  "events": {
+                    "$click": "function (evt) { return this.openLocalBook(this.book.id, evt); }"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "$value": "book.title"
+                      },
+                      "bind": 1,
+                      "class": "article-title"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "$shown": "function () { return this.book.id === this.localDeleteTarget; }",
+                  "attr": {
+                    "value": "删除"
+                  },
+                  "bind": 2,
+                  "class": "delete-action",
+                  "events": {
+                    "$click": "function (evt) { return this.deleteLocalBook(this.book.id, evt); }"
+                  },
+                  "shown": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "class": "footer-item",
+      "style": {
+        "flexShrink": 0,
+        "height": "76px",
+        "paddingBottom": "30px",
+        "paddingLeft": "34px",
+        "paddingRight": "34px",
+        "paddingTop": "12px",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "type": "text",
+          "attr": {
+            "value": "内容保存在手表本地，无需联网"
+          },
+          "class": "footer-text",
+          "style": {
+            "color": "#666e79",
+            "fontSize": "19px",
+            "lineHeight": "28px",
+            "textAlign": "center",
+            "width": "100%"
+          }
+        }
+      ]
+    }
+  ]
+}

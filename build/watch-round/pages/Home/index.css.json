@@ -1,0 +1,142 @@
+{
+  "779992388": {
+    ".page": {
+      "width": "100%",
+      "height": "100%",
+      "flexDirection": "column",
+      "backgroundColor": "#0b0d10"
+    },
+    ".article-list": {
+      "width": "100%",
+      "flexDirection": "column",
+      "backgroundColor": "#0b0d10"
+    },
+    ".header-item": {
+      "width": "100%",
+      "flexShrink": 0
+    },
+    ".header": {
+      "width": "100%",
+      "paddingTop": "34px",
+      "paddingRight": "34px",
+      "paddingBottom": "22px",
+      "paddingLeft": "34px",
+      "flexDirection": "column"
+    },
+    ".header-row": {
+      "width": "100%",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".header-copy": {
+      "width": "190px",
+      "flexDirection": "column"
+    },
+    ".header-actions": {
+      "width": "174px",
+      "flexDirection": "row",
+      "justifyContent": "space-between"
+    },
+    ".transfer-button": {
+      "width": "78px",
+      "height": "54px",
+      "borderRadius": "27px",
+      "backgroundColor": "#173f5e",
+      "color": "#70c2ff",
+      "fontSize": "21px",
+      "lineHeight": "54px",
+      "textAlign": "center"
+    },
+    ".settings-button": {
+      "width": "78px",
+      "height": "54px",
+      "borderRadius": "27px",
+      "backgroundColor": "#171b21",
+      "color": "#f7f2e8",
+      "fontSize": "21px",
+      "lineHeight": "54px",
+      "textAlign": "center"
+    },
+    ".page-title": {
+      "color": "#f7f2e8",
+      "fontSize": "44px",
+      "lineHeight": "56px",
+      "fontWeight": "bold"
+    },
+    ".card-item": {
+      "width": "100%",
+      "paddingTop": "0px",
+      "paddingRight": "8px",
+      "paddingBottom": "12px",
+      "paddingLeft": "8px"
+    },
+    ".card-row": {
+      "width": "100%",
+      "height": "116px",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".article-card": {
+      "width": "100%",
+      "height": "116px",
+      "paddingTop": "12px",
+      "paddingRight": "14px",
+      "paddingBottom": "12px",
+      "paddingLeft": "14px",
+      "borderRadius": "20px",
+      "backgroundColor": "#171b21",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".article-card-swiped": {
+      "width": "120px"
+    },
+    ".delete-action": {
+      "width": "82px",
+      "height": "116px",
+      "marginLeft": "8px",
+      "borderRadius": "18px",
+      "backgroundColor": "#b93838",
+      "color": "#ffffff",
+      "fontSize": "22px",
+      "lineHeight": "116px",
+      "textAlign": "center"
+    },
+    ".imported-card": {
+      "borderTopWidth": "2px",
+      "borderRightWidth": "2px",
+      "borderBottomWidth": "2px",
+      "borderLeftWidth": "2px",
+      "borderStyle": "solid",
+      "borderTopColor": "#245f89",
+      "borderRightColor": "#245f89",
+      "borderBottomColor": "#245f89",
+      "borderLeftColor": "#245f89",
+      "backgroundColor": "#101b24"
+    },
+    ".article-title": {
+      "width": "100%",
+      "color": "#f7f2e8",
+      "fontSize": "23px",
+      "lineHeight": "31px",
+      "fontWeight": "bold",
+      "lines": 1
+    },
+    ".footer-item": {
+      "width": "100%",
+      "height": "76px",
+      "flexShrink": 0,
+      "paddingTop": "12px",
+      "paddingRight": "34px",
+      "paddingBottom": "30px",
+      "paddingLeft": "34px"
+    },
+    ".footer-text": {
+      "width": "100%",
+      "color": "#666e79",
+      "fontSize": "19px",
+      "lineHeight": "28px",
+      "textAlign": "center"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "type": "div",
+  "class": "page",
+  "style": {
+    "width": "100%",
+    "height": "100%",
+    "backgroundColor": "#0b0d10"
+  },
+  "styleObjectId": 1182111904,
+  "children": [
+    {
+      "type": "list",
+      "attr": {
+        "id": "readerList",
+        "scrollbar": "false"
+      },
+      "bind": 1,
+      "class": "reader-list",
+      "events": {
+        "click": "onReaderClick",
+        "scrollindex": "onReaderIndexChange",
+        "touchcancel": "onReaderTouchCancel",
+        "touchend": "onReaderTouchEnd",
+        "touchmove": "onReaderTouchMove",
+        "touchstart": "onReaderTouchStart"
+      },
+      "style": {
+        "width": "100%",
+        "height": "100%",
+        "flexDirection": "column",
+        "backgroundColor": "#0b0d10"
+      },
+      "children": [
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "header"
+          },
+          "class": "top-item",
+          "style": {
+            "width": "100%",
+            "flexShrink": 0
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "top-bar",
+              "style": {
+                "width": "100%",
+                "height": "72px",
+                "paddingTop": "12px",
+                "paddingRight": "24px",
+                "paddingBottom": "6px",
+                "paddingLeft": "24px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "$value": "article.title"
+                  },
+                  "bind": 1,
+                  "class": "reader-title",
+                  "style": {
+                    "width": "100%",
+                    "paddingTop": "0px",
+                    "paddingRight": "8px",
+                    "paddingBottom": "0px",
+                    "paddingLeft": "8px",
+                    "color": "#f7f2e8",
+                    "fontSize": "27px",
+                    "lineHeight": "48px",
+                    "fontWeight": "bold",
+                    "textAlign": "center",
+                    "lines": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "paragraph"
+          },
+          "bind": 2,
+          "class": "paragraph-item",
+          "repeat": {
+            "$exp": "article.paragraphs",
+            "value": "paragraph"
+          },
+          "children": [
+            {
+              "type": "text",
+              "$class": "function () { return ['paragraph', this.fontClass, this.lineClass, this.weightClass, this.alignClass, this.colorClass, '' + 'tag-color-' + (this.paragraph.color || 'default')]; }",
+              "attr": {
+                "$value": "function () { return this.paragraph.text || this.paragraph; }"
+              },
+              "bind": 1
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "footer"
+          },
+          "class": "reader-footer",
+          "style": {
+            "width": "100%",
+            "flexShrink": 0,
+            "paddingTop": "12px",
+            "paddingRight": "28px",
+            "paddingBottom": "32px",
+            "paddingLeft": "28px"
+          },
+          "children": [
+            {
+              "type": "text",
+              "attr": {
+                "value": "已经到底了 · 彩色 TXT 版"
+              },
+              "class": "end-text",
+              "style": {
+                "width": "100%",
+                "color": "#666e79",
+                "fontSize": "17px",
+                "lineHeight": "24px",
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

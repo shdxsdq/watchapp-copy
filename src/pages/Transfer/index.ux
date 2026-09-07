@@ -1,0 +1,138 @@
+<template>
+  <div class="page">
+    <div class="top-bar">
+      <text class="back-button" onclick="goBack">‹</text>
+      <text class="page-title">TXT 传书</text>
+      <text class="header-spacer"></text>
+    </div>
+    <div class="transfer-card">
+      <text class="transfer-title">等待接收 TXT</text>
+      <text class="transfer-copy">在手机配套端选择 TXT 文件并发送，收到后会自动保存到离线书架。</text>
+      <text class="transfer-badge">{{ transferStatus }}</text>
+    </div>
+    <text class="transfer-tip">仅支持 .txt 文件</text>
+  </div>
+</template>
+
+<script>
+import {
+  getTxtTransferStatus,
+  startTxtReceiver
+} from '../../utils/txtLibrary.js'
+
+export default {
+  data: {
+    transferStatus: '正在准备传书'
+  },
+
+  onInit() {
+    startTxtReceiver()
+    this.refreshStatus()
+  },
+
+  onShow() {
+    this.refreshStatus()
+  },
+
+  refreshStatus() {
+    this.transferStatus = getTxtTransferStatus()
+  },
+
+  goBack() {
+    global.router.back()
+  }
+}
+</script>
+
+<style lang="scss">
+@import './../../assets/styles/style.scss';
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 12px 24px;
+  background-color: $ink;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  width: 100%;
+  height: 64px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.back-button,
+.header-spacer {
+  width: 52px;
+  height: 52px;
+}
+
+.back-button {
+  border-radius: 26px;
+  background-color: $surface;
+  color: #35a7ff;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  opacity: active 0.68;
+}
+
+.page-title {
+  width: 314px;
+  color: $paper;
+  font-size: 34px;
+  line-height: 52px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.transfer-card {
+  width: 100%;
+  margin-top: 24px;
+  padding: 28px 24px;
+  border: 2px solid #245f89;
+  border-radius: 24px;
+  background-color: #101b24;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transfer-title {
+  color: $paper;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.transfer-copy {
+  width: 100%;
+  margin-top: 12px;
+  color: $muted;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.transfer-badge {
+  width: 260px;
+  height: 48px;
+  margin-top: 20px;
+  border-radius: 24px;
+  background-color: #173f5e;
+  color: #70c2ff;
+  font-size: 19px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.transfer-tip {
+  margin-top: 18px;
+  color: $muted-dark;
+  font-size: 19px;
+  line-height: 28px;
+  text-align: center;
+}
+</style>

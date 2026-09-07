@@ -1,0 +1,697 @@
+{
+  "type": "div",
+  "class": "page",
+  "style": {
+    "width": "100%",
+    "height": "100%",
+    "backgroundColor": "#030609"
+  },
+  "styleObjectId": 1728483328,
+  "children": [
+    {
+      "type": "list",
+      "attr": {
+        "scrollbar": "false"
+      },
+      "class": "settings-list",
+      "style": {
+        "width": "100%",
+        "height": "100%",
+        "backgroundColor": "#030609",
+        "flexDirection": "column"
+      },
+      "children": [
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "header"
+          },
+          "class": "header-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "6px",
+            "paddingRight": "20px",
+            "paddingBottom": "2px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "top-bar",
+              "style": {
+                "width": "100%",
+                "height": "58px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "‹"
+                  },
+                  "bind": 1,
+                  "class": "back-button",
+                  "events": {
+                    "click": "goBack"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "backgroundColor": "#171b21",
+                    "color": "#35a7ff",
+                    "fontSize": "36px",
+                    "lineHeight": "47px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "设置"
+                  },
+                  "class": "page-title",
+                  "style": {
+                    "width": "326px",
+                    "color": "#199cff",
+                    "fontSize": "32px",
+                    "lineHeight": "50px",
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "class": "header-spacer",
+                  "style": {
+                    "width": "50px",
+                    "height": "50px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "preview"
+          },
+          "class": "preview-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "2px",
+            "paddingRight": "20px",
+            "paddingBottom": "4px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "preview-box",
+              "style": {
+                "width": "100%",
+                "minHeight": "70px",
+                "paddingTop": "10px",
+                "paddingRight": "14px",
+                "paddingBottom": "10px",
+                "paddingLeft": "14px",
+                "borderTopWidth": "2px",
+                "borderRightWidth": "2px",
+                "borderBottomWidth": "2px",
+                "borderLeftWidth": "2px",
+                "borderStyle": "solid",
+                "borderTopColor": "#61798d",
+                "borderRightColor": "#61798d",
+                "borderBottomColor": "#61798d",
+                "borderLeftColor": "#61798d",
+                "borderRadius": "16px",
+                "justifyContent": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "$class": "function () { return ['preview-text', this.fontClass, this.lineClass, this.weightClass, this.alignClass, this.colorClass]; }",
+                  "attr": {
+                    "value": "这是一段预览文字"
+                  },
+                  "bind": 1,
+                  "inlineStyle": {
+                    "width": "100%"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "font"
+          },
+          "class": "setting-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "setting-row",
+              "style": {
+                "width": "100%",
+                "minHeight": "62px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "字体大小"
+                  },
+                  "class": "setting-label",
+                  "style": {
+                    "width": "158px",
+                    "color": "#d8efff",
+                    "fontSize": "25px",
+                    "lineHeight": "44px"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "‹"
+                  },
+                  "bind": 1,
+                  "class": "step-button",
+                  "events": {
+                    "click": "previousFontSize"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff",
+                    "color": "#35a7ff",
+                    "fontSize": "37px",
+                    "lineHeight": "43px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "$value": "fontSizeValue"
+                  },
+                  "bind": 1,
+                  "class": "setting-value",
+                  "style": {
+                    "width": "82px",
+                    "color": "#d8efff",
+                    "fontSize": "30px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "›"
+                  },
+                  "bind": 1,
+                  "class": "step-button",
+                  "events": {
+                    "click": "nextFontSize"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff",
+                    "color": "#35a7ff",
+                    "fontSize": "37px",
+                    "lineHeight": "43px",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "spacing"
+          },
+          "class": "setting-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "setting-row",
+              "style": {
+                "width": "100%",
+                "minHeight": "62px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "行距"
+                  },
+                  "class": "setting-label",
+                  "style": {
+                    "width": "158px",
+                    "color": "#d8efff",
+                    "fontSize": "25px",
+                    "lineHeight": "44px"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "‹"
+                  },
+                  "bind": 1,
+                  "class": "step-button",
+                  "events": {
+                    "click": "previousLineSpacing"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff",
+                    "color": "#35a7ff",
+                    "fontSize": "37px",
+                    "lineHeight": "43px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "$value": "lineSpacingValue"
+                  },
+                  "bind": 1,
+                  "class": "setting-value",
+                  "style": {
+                    "width": "82px",
+                    "color": "#d8efff",
+                    "fontSize": "30px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "›"
+                  },
+                  "bind": 1,
+                  "class": "step-button",
+                  "events": {
+                    "click": "nextLineSpacing"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff",
+                    "color": "#35a7ff",
+                    "fontSize": "37px",
+                    "lineHeight": "43px",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "weight"
+          },
+          "class": "setting-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "option-row",
+              "style": {
+                "width": "100%",
+                "minHeight": "62px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "字体粗细"
+                  },
+                  "class": "setting-label",
+                  "style": {
+                    "width": "158px",
+                    "color": "#d8efff",
+                    "fontSize": "25px",
+                    "lineHeight": "44px"
+                  }
+                },
+                {
+                  "type": "text",
+                  "$class": "function () { return ['option-button', this.normalWeightClass]; }",
+                  "attr": {
+                    "$value": "function () { return '' + this.normalWeightMark + ' 正常'; }"
+                  },
+                  "bind": 1,
+                  "events": {
+                    "click": "useNormalWeight"
+                  },
+                  "inlineStyle": {
+                    "width": "116px",
+                    "color": "#8ca5b8",
+                    "fontSize": "23px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "$class": "function () { return ['option-button', this.boldWeightClass]; }",
+                  "attr": {
+                    "$value": "function () { return '' + this.boldWeightMark + ' 粗体'; }"
+                  },
+                  "bind": 1,
+                  "events": {
+                    "click": "useBoldWeight"
+                  },
+                  "inlineStyle": {
+                    "width": "116px",
+                    "color": "#8ca5b8",
+                    "fontSize": "23px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "align"
+          },
+          "class": "setting-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "option-row",
+              "style": {
+                "width": "100%",
+                "minHeight": "62px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "对齐方式"
+                  },
+                  "class": "setting-label",
+                  "style": {
+                    "width": "158px",
+                    "color": "#d8efff",
+                    "fontSize": "25px",
+                    "lineHeight": "44px"
+                  }
+                },
+                {
+                  "type": "text",
+                  "$class": "function () { return ['option-button', this.leftAlignClass]; }",
+                  "attr": {
+                    "$value": "function () { return '' + this.leftAlignMark + ' 左'; }"
+                  },
+                  "bind": 1,
+                  "events": {
+                    "click": "useLeftAlign"
+                  },
+                  "inlineStyle": {
+                    "width": "116px",
+                    "color": "#8ca5b8",
+                    "fontSize": "23px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "$class": "function () { return ['option-button', this.centerAlignClass]; }",
+                  "attr": {
+                    "$value": "function () { return '' + this.centerAlignMark + ' 中'; }"
+                  },
+                  "bind": 1,
+                  "events": {
+                    "click": "useCenterAlign"
+                  },
+                  "inlineStyle": {
+                    "width": "116px",
+                    "color": "#8ca5b8",
+                    "fontSize": "23px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "color"
+          },
+          "class": "color-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "color-row",
+              "style": {
+                "width": "100%",
+                "minHeight": "62px",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "文字颜色"
+                  },
+                  "class": "setting-label",
+                  "style": {
+                    "width": "158px",
+                    "color": "#d8efff",
+                    "fontSize": "25px",
+                    "lineHeight": "44px"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "‹"
+                  },
+                  "bind": 1,
+                  "class": "step-button",
+                  "events": {
+                    "click": "previousTextColor"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff",
+                    "color": "#35a7ff",
+                    "fontSize": "37px",
+                    "lineHeight": "43px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "$class": "function () { return ['color-swatch', this.swatchClass]; }",
+                  "bind": 1,
+                  "inlineStyle": {
+                    "width": "42px",
+                    "height": "42px",
+                    "marginLeft": "6px",
+                    "borderRadius": "22px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "$value": "textColorValue"
+                  },
+                  "bind": 1,
+                  "class": "color-value",
+                  "style": {
+                    "width": "72px",
+                    "color": "#d8efff",
+                    "fontSize": "19px",
+                    "lineHeight": "50px",
+                    "textAlign": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "attr": {
+                    "value": "›"
+                  },
+                  "bind": 1,
+                  "class": "step-button",
+                  "events": {
+                    "click": "nextTextColor"
+                  },
+                  "style": {
+                    "width": "50px",
+                    "height": "50px",
+                    "borderRadius": "25px",
+                    "borderTopWidth": "3px",
+                    "borderRightWidth": "3px",
+                    "borderBottomWidth": "3px",
+                    "borderLeftWidth": "3px",
+                    "borderStyle": "solid",
+                    "borderTopColor": "#35a7ff",
+                    "borderRightColor": "#35a7ff",
+                    "borderBottomColor": "#35a7ff",
+                    "borderLeftColor": "#35a7ff",
+                    "color": "#35a7ff",
+                    "fontSize": "37px",
+                    "lineHeight": "43px",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "footer"
+          },
+          "class": "footer-item",
+          "style": {
+            "width": "100%",
+            "paddingTop": "5px",
+            "paddingRight": "20px",
+            "paddingBottom": "18px",
+            "paddingLeft": "20px"
+          },
+          "children": [
+            {
+              "type": "text",
+              "attr": {
+                "value": "修改后自动保存，并应用到所有文章"
+              },
+              "class": "footer-text",
+              "style": {
+                "width": "100%",
+                "color": "#627486",
+                "fontSize": "18px",
+                "lineHeight": "28px",
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

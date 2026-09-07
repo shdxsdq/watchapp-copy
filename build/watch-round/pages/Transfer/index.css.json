@@ -1,0 +1,97 @@
+{
+  "1561212216": {
+    ".page": {
+      "width": "100%",
+      "height": "100%",
+      "paddingTop": "12px",
+      "paddingRight": "24px",
+      "paddingBottom": "12px",
+      "paddingLeft": "24px",
+      "backgroundColor": "#0b0d10",
+      "flexDirection": "column",
+      "alignItems": "center"
+    },
+    ".top-bar": {
+      "width": "100%",
+      "height": "64px",
+      "flexDirection": "row",
+      "alignItems": "center"
+    },
+    ".back-button": {
+      "width": "52px",
+      "height": "52px",
+      "borderRadius": "26px",
+      "backgroundColor": "#171b21",
+      "color": "#35a7ff",
+      "fontSize": "38px",
+      "lineHeight": "48px",
+      "textAlign": "center"
+    },
+    ".header-spacer": {
+      "width": "52px",
+      "height": "52px"
+    },
+    ".page-title": {
+      "width": "314px",
+      "color": "#f7f2e8",
+      "fontSize": "34px",
+      "lineHeight": "52px",
+      "fontWeight": "bold",
+      "textAlign": "center"
+    },
+    ".transfer-card": {
+      "width": "100%",
+      "marginTop": "24px",
+      "paddingTop": "28px",
+      "paddingRight": "24px",
+      "paddingBottom": "28px",
+      "paddingLeft": "24px",
+      "borderTopWidth": "2px",
+      "borderRightWidth": "2px",
+      "borderBottomWidth": "2px",
+      "borderLeftWidth": "2px",
+      "borderStyle": "solid",
+      "borderTopColor": "#245f89",
+      "borderRightColor": "#245f89",
+      "borderBottomColor": "#245f89",
+      "borderLeftColor": "#245f89",
+      "borderRadius": "24px",
+      "backgroundColor": "#101b24",
+      "flexDirection": "column",
+      "alignItems": "center"
+    },
+    ".transfer-title": {
+      "color": "#f7f2e8",
+      "fontSize": "30px",
+      "lineHeight": "42px",
+      "fontWeight": "bold",
+      "textAlign": "center"
+    },
+    ".transfer-copy": {
+      "width": "100%",
+      "marginTop": "12px",
+      "color": "#9ca3ad",
+      "fontSize": "22px",
+      "lineHeight": "33px",
+      "textAlign": "center"
+    },
+    ".transfer-badge": {
+      "width": "260px",
+      "height": "48px",
+      "marginTop": "20px",
+      "borderRadius": "24px",
+      "backgroundColor": "#173f5e",
+      "color": "#70c2ff",
+      "fontSize": "19px",
+      "lineHeight": "48px",
+      "textAlign": "center"
+    },
+    ".transfer-tip": {
+      "marginTop": "18px",
+      "color": "#666e79",
+      "fontSize": "19px",
+      "lineHeight": "28px",
+      "textAlign": "center"
+    }
+  }
+}

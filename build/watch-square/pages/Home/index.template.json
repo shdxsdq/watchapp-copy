@@ -1,0 +1,229 @@
+{
+  "type": "div",
+  "class": "page",
+  "style": {
+    "width": "100%",
+    "height": "100%",
+    "flexDirection": "column",
+    "paddingTop": "0px",
+    "paddingRight": "10px",
+    "paddingBottom": "0px",
+    "paddingLeft": "10px",
+    "backgroundColor": "#0b0d10"
+  },
+  "styleObjectId": 779992388,
+  "children": [
+    {
+      "type": "div",
+      "class": "header-item",
+      "style": {
+        "width": "100%",
+        "flexShrink": 0
+      },
+      "children": [
+        {
+          "type": "div",
+          "class": "header",
+          "style": {
+            "width": "100%",
+            "paddingTop": "16px",
+            "paddingRight": "10px",
+            "paddingBottom": "12px",
+            "paddingLeft": "10px",
+            "flexDirection": "column"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "header-row",
+              "style": {
+                "width": "100%",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "class": "header-actions",
+                  "style": {
+                    "width": "100%",
+                    "flexDirection": "row",
+                    "justifyContent": "flex-end"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "value": "设置"
+                      },
+                      "bind": 1,
+                      "class": "settings-button",
+                      "events": {
+                        "click": "openSettings"
+                      },
+                      "style": {
+                        "width": "78px",
+                        "height": "54px",
+                        "borderRadius": "27px",
+                        "backgroundColor": "#171b21",
+                        "color": "#f7f2e8",
+                        "fontSize": "21px",
+                        "lineHeight": "54px",
+                        "textAlign": "center"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "attr": {
+        "type": "grid",
+        "columns": "2",
+        "scrollbar": "false"
+      },
+      "class": "article-list",
+      "style": {
+        "width": "100%",
+        "flexDirection": "column",
+        "backgroundColor": "#0b0d10"
+      },
+      "children": [
+        {
+          "type": "list-item",
+          "$shown": "importedAvailable",
+          "attr": {
+            "type": "article"
+          },
+          "bind": 2,
+          "class": "card-item",
+          "shown": false,
+          "children": [
+            {
+              "type": "div",
+              "class": "card-row",
+              "children": [
+                {
+                  "type": "div",
+                  "$class": "function () { return ['article-card', 'imported-card', this.importedCardClass]; }",
+                  "bind": 1,
+                  "events": {
+                    "click": "openImportedTxt"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "$value": "importedTitle"
+                      },
+                      "bind": 1,
+                      "class": "article-title"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "$shown": "importedDeleteVisible",
+                  "attr": {
+                    "value": "删除"
+                  },
+                  "bind": 2,
+                  "class": "delete-action",
+                  "events": {
+                    "click": "deleteImportedTxt"
+                  },
+                  "shown": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list-item",
+          "attr": {
+            "type": "article"
+          },
+          "bind": 2,
+          "class": "card-item",
+          "repeat": {
+            "$exp": "localBooks",
+            "value": "book"
+          },
+          "children": [
+            {
+              "type": "div",
+              "class": "card-row",
+              "children": [
+                {
+                  "type": "div",
+                  "$class": "function () { return ['article-card', this.book.id === this.localDeleteTarget ? 'article-card-swiped' : '']; }",
+                  "bind": 1,
+                  "events": {
+                    "$click": "function (evt) { return this.openLocalBook(this.book.id, evt); }"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "attr": {
+                        "$value": "book.title"
+                      },
+                      "bind": 1,
+                      "class": "article-title"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "$shown": "function () { return this.book.id === this.localDeleteTarget; }",
+                  "attr": {
+                    "value": "删除"
+                  },
+                  "bind": 2,
+                  "class": "delete-action",
+                  "events": {
+                    "$click": "function (evt) { return this.deleteLocalBook(this.book.id, evt); }"
+                  },
+                  "shown": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "class": "footer-item",
+      "style": {
+        "width": "100%",
+        "height": "76px",
+        "flexShrink": 0,
+        "paddingTop": "8px",
+        "paddingRight": "10px",
+        "paddingBottom": "22px",
+        "paddingLeft": "10px"
+      },
+      "children": [
+        {
+          "type": "text",
+          "attr": {
+            "value": "内容保存在手表本地，无需联网"
+          },
+          "class": "footer-text",
+          "style": {
+            "width": "100%",
+            "color": "#666e79",
+            "fontSize": "19px",
+            "lineHeight": "28px",
+            "textAlign": "center"
+          }
+        }
+      ]
+    }
+  ]
+}
